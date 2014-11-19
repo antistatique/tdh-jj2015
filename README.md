@@ -26,7 +26,7 @@ We use a subtheme of Bootstrap Theme. The theme repo is on https://github.com/an
 
 ```shell
 # in the styleguide
-$ gulp serve
+$ gulp serve --production
 # in the drupal project
 $ gulp
 ```
