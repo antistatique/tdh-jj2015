@@ -174,6 +174,15 @@ function jj2015_site_user_default_permissions() {
     'module' => 'ckeditor',
   );
 
+  // Exported permission: 'administer content translations'.
+  $permissions['administer content translations'] = array(
+    'name' => 'administer content translations',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'i18n_node',
+  );
+
   // Exported permission: 'administer content types'.
   $permissions['administer content types'] = array(
     'name' => 'administer content types',
@@ -222,6 +231,15 @@ function jj2015_site_user_default_permissions() {
     'name' => 'administer features menu items',
     'roles' => array(),
     'module' => 'menu_admin_per_menu',
+  );
+
+  // Exported permission: 'administer field collections'.
+  $permissions['administer field collections'] = array(
+    'name' => 'administer field collections',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'field_collection',
   );
 
   // Exported permission: 'administer fieldgroups'.
@@ -503,6 +521,13 @@ function jj2015_site_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create session content'.
+  $permissions['create session content'] = array(
+    'name' => 'create session content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create url aliases'.
   $permissions['create url aliases'] = array(
     'name' => 'create url aliases',
@@ -539,6 +564,13 @@ function jj2015_site_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete any session content'.
+  $permissions['delete any session content'] = array(
+    'name' => 'delete any session content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete backup files'.
   $permissions['delete backup files'] = array(
     'name' => 'delete backup files',
@@ -557,6 +589,13 @@ function jj2015_site_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete own session content'.
+  $permissions['delete own session content'] = array(
+    'name' => 'delete own session content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete revisions'.
   $permissions['delete revisions'] = array(
     'name' => 'delete revisions',
@@ -564,6 +603,13 @@ function jj2015_site_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'delete terms in languages'.
+  $permissions['delete terms in languages'] = array(
+    'name' => 'delete terms in languages',
+    'roles' => array(),
+    'module' => 'taxonomy',
   );
 
   // Exported permission: 'display drupal links'.
@@ -584,6 +630,13 @@ function jj2015_site_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any session content'.
+  $permissions['edit any session content'] = array(
+    'name' => 'edit any session content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit own page content'.
   $permissions['edit own page content'] = array(
     'name' => 'edit own page content',
@@ -593,12 +646,33 @@ function jj2015_site_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit own session content'.
+  $permissions['edit own session content'] = array(
+    'name' => 'edit own session content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit terms in languages'.
+  $permissions['edit terms in languages'] = array(
+    'name' => 'edit terms in languages',
+    'roles' => array(),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: 'enter page revision log entry'.
   $permissions['enter page revision log entry'] = array(
     'name' => 'enter page revision log entry',
     'roles' => array(
       'administrator' => 'administrator',
     ),
+    'module' => 'override_node_options',
+  );
+
+  // Exported permission: 'enter session revision log entry'.
+  $permissions['enter session revision log entry'] = array(
+    'name' => 'enter session revision log entry',
+    'roles' => array(),
     'module' => 'override_node_options',
   );
 
@@ -692,6 +766,48 @@ function jj2015_site_user_default_permissions() {
     'module' => 'override_node_options',
   );
 
+  // Exported permission: 'override session authored by option'.
+  $permissions['override session authored by option'] = array(
+    'name' => 'override session authored by option',
+    'roles' => array(),
+    'module' => 'override_node_options',
+  );
+
+  // Exported permission: 'override session authored on option'.
+  $permissions['override session authored on option'] = array(
+    'name' => 'override session authored on option',
+    'roles' => array(),
+    'module' => 'override_node_options',
+  );
+
+  // Exported permission: 'override session promote to front page option'.
+  $permissions['override session promote to front page option'] = array(
+    'name' => 'override session promote to front page option',
+    'roles' => array(),
+    'module' => 'override_node_options',
+  );
+
+  // Exported permission: 'override session published option'.
+  $permissions['override session published option'] = array(
+    'name' => 'override session published option',
+    'roles' => array(),
+    'module' => 'override_node_options',
+  );
+
+  // Exported permission: 'override session revision option'.
+  $permissions['override session revision option'] = array(
+    'name' => 'override session revision option',
+    'roles' => array(),
+    'module' => 'override_node_options',
+  );
+
+  // Exported permission: 'override session sticky option'.
+  $permissions['override session sticky option'] = array(
+    'name' => 'override session sticky option',
+    'roles' => array(),
+    'module' => 'override_node_options',
+  );
+
   // Exported permission: 'perform backup'.
   $permissions['perform backup'] = array(
     'name' => 'perform backup',
@@ -764,6 +880,15 @@ function jj2015_site_user_default_permissions() {
     'module' => 'devel',
   );
 
+  // Exported permission: 'translate admin strings'.
+  $permissions['translate admin strings'] = array(
+    'name' => 'translate admin strings',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'i18n_string',
+  );
+
   // Exported permission: 'translate content'.
   $permissions['translate content'] = array(
     'name' => 'translate content',
@@ -780,6 +905,15 @@ function jj2015_site_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'locale',
+  );
+
+  // Exported permission: 'translate user-defined strings'.
+  $permissions['translate user-defined strings'] = array(
+    'name' => 'translate user-defined strings',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'i18n_string',
   );
 
   // Exported permission: 'use advanced search'.
@@ -835,6 +969,13 @@ function jj2015_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
     ),
+    'module' => 'view_unpublished',
+  );
+
+  // Exported permission: 'view any unpublished session content'.
+  $permissions['view any unpublished session content'] = array(
+    'name' => 'view any unpublished session content',
+    'roles' => array(),
     'module' => 'view_unpublished',
   );
 
