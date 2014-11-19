@@ -45,6 +45,90 @@ function jj2015_session_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_res_tabs|field_collection_item|field_resources|form';
+  $field_group->group_name = 'group_res_tabs';
+  $field_group->entity_type = 'field_collection_item';
+  $field_group->bundle = 'field_resources';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Resources Tabs',
+    'weight' => '0',
+    'children' => array(
+      0 => 'group_tab_file',
+      1 => 'group_tab_info',
+    ),
+    'format_type' => 'tabs',
+    'format_settings' => array(
+      'formatter' => '',
+      'instance_settings' => array(
+        'classes' => '',
+      ),
+    ),
+  );
+  $export['group_res_tabs|field_collection_item|field_resources|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_tab_file|field_collection_item|field_resources|form';
+  $field_group->group_name = 'group_tab_file';
+  $field_group->entity_type = 'field_collection_item';
+  $field_group->bundle = 'field_resources';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_res_tabs';
+  $field_group->data = array(
+    'label' => 'File',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_resource_title',
+      1 => 'field_file',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_tab_file|field_collection_item|field_resources|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_tab_info|field_collection_item|field_resources|form';
+  $field_group->group_name = 'group_tab_info';
+  $field_group->entity_type = 'field_collection_item';
+  $field_group->bundle = 'field_resources';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_res_tabs';
+  $field_group->data = array(
+    'label' => 'Infos',
+    'weight' => '2',
+    'children' => array(
+      0 => 'field_language',
+      1 => 'field_author',
+      2 => 'field_copyright',
+      3 => 'field_year',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_tab_info|field_collection_item|field_resources|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_tab_info|node|session|form';
   $field_group->group_name = 'group_tab_info';
   $field_group->entity_type = 'node';
@@ -53,7 +137,7 @@ function jj2015_session_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Infos',
-    'weight' => '8',
+    'weight' => '1',
     'children' => array(
       0 => 'field_hours',
       1 => 'field_main_language',
@@ -74,6 +158,34 @@ function jj2015_session_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_tab_resources_links|node|session|form';
+  $field_group->group_name = 'group_tab_resources_links';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'session';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Resources Links',
+    'weight' => '6',
+    'children' => array(
+      0 => 'field_resources_links',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'label' => 'Resources Links',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'classes' => 'group-tab-resources-links field-group-tab',
+        'description' => '',
+      ),
+      'formatter' => 'closed',
+    ),
+  );
+  $export['group_tab_resources_links|node|session|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_tab_resources|node|session|form';
   $field_group->group_name = 'group_tab_resources';
   $field_group->entity_type = 'node';
@@ -82,9 +194,10 @@ function jj2015_session_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Resources',
-    'weight' => '9',
+    'weight' => '2',
     'children' => array(
       0 => 'field_youtube',
+      1 => 'field_resources',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
