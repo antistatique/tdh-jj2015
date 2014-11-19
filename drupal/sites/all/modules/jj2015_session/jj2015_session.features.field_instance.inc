@@ -866,6 +866,43 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-session-field_session_day'
+  $field_instances['node-session-field_session_day'] = array(
+    'bundle' => 'session',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Séléctionnez le jour où se tiendra cette session.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'i18n_taxonomy',
+        'settings' => array(),
+        'type' => 'i18n_taxonomy_term_reference_link',
+        'weight' => 13,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_session_day',
+    'label' => 'Session Day',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 14,
+    ),
+  );
+
   // Exported field_instance: 'node-session-field_session_type'
   $field_instances['node-session-field_session_type'] = array(
     'bundle' => 'session',
@@ -1474,6 +1511,7 @@ function jj2015_session_field_default_field_instances() {
   t('Main Language');
   t('Resources');
   t('Resources Links');
+  t('Session Day');
   t('Session Name');
   t('Session Type');
   t('Si coché, la sesion sera mise en avant sur la page d\'accueil.');
@@ -1482,6 +1520,7 @@ function jj2015_session_field_default_field_instances() {
   t('Speaker');
   t('Speaker Name');
   t('Speakers');
+  t('Séléctionnez le jour où se tiendra cette session.');
   t('Time');
   t('Title');
   t('URL');
