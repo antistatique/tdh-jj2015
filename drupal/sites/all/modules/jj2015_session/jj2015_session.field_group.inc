@@ -168,7 +168,7 @@ function jj2015_session_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Infos',
-    'weight' => '1',
+    'weight' => '2',
     'children' => array(
       0 => 'field_hours',
       1 => 'field_main_language',
@@ -230,7 +230,7 @@ function jj2015_session_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Resources Links',
-    'weight' => '6',
+    'weight' => '4',
     'children' => array(
       0 => 'field_resources_links',
     ),
@@ -258,7 +258,7 @@ function jj2015_session_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Resources',
-    'weight' => '2',
+    'weight' => '3',
     'children' => array(
       0 => 'field_youtube',
       1 => 'field_resources',
@@ -274,6 +274,34 @@ function jj2015_session_field_group_info() {
     ),
   );
   $export['group_tab_resources|node|session|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_tab_speakers|node|session|form';
+  $field_group->group_name = 'group_tab_speakers';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'session';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Speakers',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_speakers',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'label' => 'Speakers',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'classes' => 'group-tab-speakers field-group-tab',
+        'description' => '',
+      ),
+      'formatter' => 'closed',
+    ),
+  );
+  $export['group_tab_speakers|node|session|form'] = $field_group;
 
   return $export;
 }

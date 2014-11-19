@@ -459,6 +459,76 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'field_collection_item-field_speakers-field_description'
+  $field_instances['field_collection_item-field_speakers-field_description'] = array(
+    'bundle' => 'field_speakers',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_description',
+    'label' => 'Description',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_speakers-field_speaker'
+  $field_instances['field_collection_item-field_speakers-field_speaker'] = array(
+    'bundle' => 'field_speakers',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_speaker',
+    'label' => 'Speaker',
+    'required' => FALSE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 1,
+    ),
+  );
+
   // Exported field_instance: 'node-session-body'
   $field_instances['node-session-body'] = array(
     'bundle' => 'session',
@@ -888,6 +958,49 @@ function jj2015_session_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_select',
       'weight' => 13,
+    ),
+  );
+
+  // Exported field_instance: 'node-session-field_speakers'
+  $field_instances['node-session-field_speakers'] = array(
+    'bundle' => 'session',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => 'Add',
+          'delete' => 'Delete',
+          'description' => TRUE,
+          'edit' => 'Edit',
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 11,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_speakers',
+    'label' => 'Speakers',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection',
+      'settings' => array(),
+      'type' => 'field_collection_embed',
+      'weight' => 17,
     ),
   );
 
@@ -1337,6 +1450,7 @@ function jj2015_session_field_default_field_instances() {
   t('CV éventuel au format PDF');
   t('Copyright');
   t('Date');
+  t('Description');
   t('Email');
   t('Featured');
   t('File');
@@ -1356,7 +1470,9 @@ function jj2015_session_field_default_field_instances() {
   t('Si coché, la sesion sera mise en avant sur la page d\'accueil.');
   t('Si coché, le/la speaker sera mis/e en avant sur la page d\'accueil.');
   t('Site internet ou autre lien lié à ce/cette speaker.');
+  t('Speaker');
   t('Speaker Name');
+  t('Speakers');
   t('Title');
   t('URL');
   t('Year');
