@@ -11,9 +11,9 @@ set :repository,     "git@github.com:antistatique/tdh-jj2015.git"
 
 set :domain,         "jj2015.alwaysdata.net"
 
-set :user,           "densite"
-set :group,          "densite"
-set :runner_group,   "densite"
+set :user,           "jj2015"
+set :group,          "jj2015"
+set :runner_group,   "jj2015"
 
 set :use_sudo,       false
 default_run_options[:pty] = true

@@ -1,5 +1,5 @@
 set :stages,    "staging"
 
-set :branch,    "staging"
+set :branch,    "dev"
 
-set :deploy_to, "/home/jj2015/www/staging.densite.ch"
+set :deploy_to, "/home/jj2015/www/staging.jj2015.ch"
