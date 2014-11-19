@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the jj2015_site feature.
+ */
+
+include_once 'jj2015_site.features.inc';
