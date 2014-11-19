@@ -9,9 +9,9 @@
  */
 function jj2015_session_taxonomy_default_vocabularies() {
   return array(
-    'session_day' => array(
-      'name' => 'Session Day',
-      'machine_name' => 'session_day',
+    'event_day' => array(
+      'name' => 'Event Day',
+      'machine_name' => 'event_day',
       'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',
