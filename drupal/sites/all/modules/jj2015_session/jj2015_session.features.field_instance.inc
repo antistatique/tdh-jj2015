@@ -616,60 +616,6 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_hours'
-  $field_instances['node-session-field_hours'] = array(
-    'bundle' => 'session',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'date',
-        'settings' => array(
-          'format_type' => 'long',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-        ),
-        'type' => 'date_default',
-        'weight' => 5,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_hours',
-    'label' => 'Date',
-    'required' => 1,
-    'settings' => array(
-      'default_value' => 'now',
-      'default_value2' => 'same',
-      'default_value_code' => '',
-      'default_value_code2' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'date',
-      'settings' => array(
-        'display_all_day' => 1,
-        'increment' => 15,
-        'input_format' => 'm/d/Y - H:i:s',
-        'input_format_custom' => '',
-        'label_position' => 'within',
-        'text_parts' => array(),
-        'year_range' => '-3:+3',
-      ),
-      'type' => 'date_select',
-      'weight' => 14,
-    ),
-  );
-
   // Exported field_instance: 'node-session-field_image'
   $field_instances['node-session-field_image'] = array(
     'bundle' => 'session',
@@ -753,7 +699,7 @@ function jj2015_session_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 16,
+      'weight' => 17,
     ),
   );
 
@@ -790,7 +736,7 @@ function jj2015_session_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 15,
+      'weight' => 16,
     ),
   );
 
@@ -1001,6 +947,70 @@ function jj2015_session_field_default_field_instances() {
       'settings' => array(),
       'type' => 'field_collection_embed',
       'weight' => 17,
+    ),
+  );
+
+  // Exported field_instance: 'node-session-field_time'
+  $field_instances['node-session-field_time'] = array(
+    'bundle' => 'session',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'timefield',
+        'settings' => array(
+          'display_format' => array(
+            'hour' => 'g',
+            'minute' => 'i',
+            'period' => 'a',
+            'period_separator' => '',
+            'separator' => ':',
+          ),
+        ),
+        'type' => 'timefield_default',
+        'weight' => 12,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_time',
+    'label' => 'Time',
+    'required' => 0,
+    'settings' => array(
+      'disable_plugin' => 1,
+      'input_format' => array(
+        'am_text' => 'AM',
+        'atPosition' => 'left bottom',
+        'closeButtonText' => 'Done',
+        'deselectButtonText' => 'Deselect',
+        'myPosition' => 'left top',
+        'nowButtonText' => 'Now',
+        'periodSeparator' => '',
+        'pm_text' => 'PM',
+        'separator' => ':',
+        'showCloseButton' => 1,
+        'showDeselectButton' => 0,
+        'showLeadingZero' => 1,
+        'showNowButton' => 1,
+        'showPeriod' => 0,
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'timefield',
+      'settings' => array(
+        'label_position' => 'above',
+      ),
+      'type' => 'timefield_standard',
+      'weight' => 15,
     ),
   );
 
@@ -1449,7 +1459,6 @@ function jj2015_session_field_default_field_instances() {
   t('CV');
   t('CV éventuel au format PDF');
   t('Copyright');
-  t('Date');
   t('Description');
   t('Email');
   t('Featured');
@@ -1473,6 +1482,7 @@ function jj2015_session_field_default_field_instances() {
   t('Speaker');
   t('Speaker Name');
   t('Speakers');
+  t('Time');
   t('Title');
   t('URL');
   t('Year');

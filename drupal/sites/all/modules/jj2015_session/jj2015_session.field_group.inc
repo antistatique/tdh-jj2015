@@ -170,10 +170,10 @@ function jj2015_session_field_group_info() {
     'label' => 'Infos',
     'weight' => '2',
     'children' => array(
-      0 => 'field_hours',
-      1 => 'field_main_language',
-      2 => 'field_languages',
-      3 => 'field_session_type',
+      0 => 'field_main_language',
+      1 => 'field_languages',
+      2 => 'field_session_type',
+      3 => 'field_time',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
