@@ -142,6 +142,7 @@ function jj2015_session_field_group_info() {
       0 => 'field_hours',
       1 => 'field_main_language',
       2 => 'field_languages',
+      3 => 'field_session_type',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

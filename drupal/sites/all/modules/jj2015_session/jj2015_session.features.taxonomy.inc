@@ -9,10 +9,10 @@
  */
 function jj2015_session_taxonomy_default_vocabularies() {
   return array(
-    'languages' => array(
-      'name' => 'Languages',
-      'machine_name' => 'languages',
-      'description' => 'Available languages',
+    'session_types' => array(
+      'name' => 'Session Types',
+      'machine_name' => 'session_types',
+      'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,

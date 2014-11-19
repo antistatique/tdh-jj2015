@@ -596,7 +596,7 @@ function jj2015_session_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_select',
-      'weight' => 7,
+      'weight' => 14,
     ),
   );
 
@@ -683,7 +683,7 @@ function jj2015_session_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 9,
+      'weight' => 16,
     ),
   );
 
@@ -720,7 +720,7 @@ function jj2015_session_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 8,
+      'weight' => 15,
     ),
   );
 
@@ -850,6 +850,47 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-session-field_session_type'
+  $field_instances['node-session-field_session_type'] = array(
+    'bundle' => 'session',
+    'default_value' => array(
+      0 => array(
+        'tid' => 8,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'i18n_taxonomy',
+        'settings' => array(),
+        'type' => 'i18n_taxonomy_term_reference_link',
+        'weight' => 10,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_session_type',
+    'label' => 'Session Type',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 13,
+    ),
+  );
+
   // Exported field_instance: 'node-session-field_youtube'
   $field_instances['node-session-field_youtube'] = array(
     'bundle' => 'session',
@@ -914,6 +955,7 @@ function jj2015_session_field_default_field_instances() {
   t('Resources');
   t('Resources Links');
   t('Session Name');
+  t('Session Type');
   t('Si coché, la sesion sera mise en avant sur la page d\'accueil.');
   t('Title');
   t('URL');
