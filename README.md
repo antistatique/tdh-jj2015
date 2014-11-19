@@ -20,7 +20,7 @@ $ git clone git@github.com:antistatique/tdh-styleguide.git
 $ git clone git@github.com:antistatique/tdh-jj2015.git
 ```
 
-### Theme installation
+### Theme development
 
 We use a subtheme of Bootstrap Theme. The theme repo is on https://github.com/antistatique/tdh-styleguide. To compile the theme into the right place, simply run gulp on both repos.
 
