@@ -26,6 +26,14 @@ function jj2015_session_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
+    'speaker' => array(
+      'name' => t('Speaker'),
+      'base' => 'node_content',
+      'description' => t('Le speaker est la ou l\'une des personnes qui intervient au courant d\'une session.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
   );
   drupal_alter('node_info', $items);
   return $items;

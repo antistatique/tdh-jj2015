@@ -71,6 +71,37 @@ function jj2015_session_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_tab_content|node|speaker|form';
+  $field_group->group_name = 'group_tab_content';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'speaker';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Content',
+    'weight' => '0',
+    'children' => array(
+      0 => 'body',
+      1 => 'field_name',
+      2 => 'field_job_title',
+      3 => 'language',
+      4 => 'title',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-tab-content field-group-tab',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_tab_content|node|speaker|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_tab_file|field_collection_item|field_resources|form';
   $field_group->group_name = 'group_tab_file';
   $field_group->entity_type = 'field_collection_item';
@@ -155,6 +186,38 @@ function jj2015_session_field_group_info() {
     ),
   );
   $export['group_tab_info|node|session|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_tab_info|node|speaker|form';
+  $field_group->group_name = 'group_tab_info';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'speaker';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Infos',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_featured',
+      1 => 'field_languages',
+      2 => 'field_image',
+      3 => 'field_url',
+      4 => 'field_file',
+      5 => 'field_email',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-tab-info field-group-tab',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_tab_info|node|speaker|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
