@@ -574,8 +574,8 @@ function jj2015_session_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_hours',
-    'label' => 'Heures',
-    'required' => 0,
+    'label' => 'Date',
+    'required' => 1,
     'settings' => array(
       'default_value' => 'now',
       'default_value2' => 'same',
@@ -682,7 +682,7 @@ function jj2015_session_field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(),
-      'type' => 'options_select',
+      'type' => 'options_buttons',
       'weight' => 9,
     ),
   );
@@ -748,7 +748,7 @@ function jj2015_session_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_name',
     'label' => 'Session Name',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -901,9 +901,9 @@ function jj2015_session_field_default_field_instances() {
   t('Author');
   t('Body');
   t('Copyright');
+  t('Date');
   t('Featured');
   t('File');
-  t('Heures');
   t('Image');
   t('Language');
   t('Languages');
