@@ -1,0 +1,40 @@
+name = JJ2015
+description = A Bootstrap Sub-theme.
+core = 7.x
+base theme = bootstrap
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[navigation]     = 'Navigation'
+regions[header]         = 'Top Bar'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[footer_1]         = 'Footer 1'
+regions[footer_2]         = 'Footer 2'
+regions[footer_3]         = 'Footer 3'
+regions[page_top]       = 'Page top'
+regions[page_bottom]    = 'Page bottom'
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = build/css/main.css
+scripts[] = build/js/vendors.min.js
+scripts[] = build/js/main.min.js
+
+exclude[js][] = 'sites/all/themes/bootstrap/js/bootstrap.js'
+
+exclude[css][] = 'sites/all/modules/contrib/views/css/views.css'
+exclude[css][] = 'modules/field/theme/field.css'
+exclude[css][] = 'sites/all/modules/contrib/views/css/views.css'
+
+; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
+settings[bootstrap_cdn] = ''
