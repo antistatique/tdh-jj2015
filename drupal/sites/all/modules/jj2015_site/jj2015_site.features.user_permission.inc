@@ -192,6 +192,15 @@ function jj2015_site_user_default_permissions() {
     'module' => 'context_ui',
   );
 
+  // Exported permission: 'administer dependencies'.
+  $permissions['administer dependencies'] = array(
+    'name' => 'administer dependencies',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'conditional_fields',
+  );
+
   // Exported permission: 'administer devel menu items'.
   $permissions['administer devel menu items'] = array(
     'name' => 'administer devel menu items',
