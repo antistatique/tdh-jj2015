@@ -28,3 +28,26 @@ function jj2015_menu_local_tasks(&$variables) {
 
   return $output;
 }
+
+
+/**
+* Preprocess variables for node.tpl.php
+*
+* @see node.tpl.php
+*/
+function jj2015_preprocess_node(&$variables) {
+
+  // That will let you use a template file like: node--[type|nodeid]--teaser.tpl.php
+  if($variables['view_mode'] == 'teaser') {
+    $variables['theme_hook_suggestions'][] = 'node__' . $variables['node']->type . '__teaser';
+  }
+  // if (module_exists('devel')) {
+  //  dpm($variables);
+  // }
+}
+
+function jj2015_preprocess_image_style(&$vars) {
+  if ($vars['style_name'] == 'banner') {
+    $vars['attributes']['class'][] = 'img-responsive'; // can be 'img-rounded', 'img-circle', or 'img-thumbnail'
+  }
+}

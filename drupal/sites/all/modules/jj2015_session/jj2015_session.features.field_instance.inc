@@ -626,7 +626,7 @@ function jj2015_session_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'large',
+          'image_style' => 'banner',
         ),
         'type' => 'image',
         'weight' => 0,
@@ -635,6 +635,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
+          'class' => '',
           'image_link' => 'content',
           'image_style' => 'medium',
         ),
