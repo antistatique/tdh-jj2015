@@ -120,12 +120,6 @@ hide($content['field_name']); // may well be useless...
 
         <hr>
 
-        <div class="row">
-          <div class="col-sm-12 spacer-bottom">
-              <?php print render($content_bottom); ?>
-          </div>
-        </div>
-
       </div>
     </div>
   </div>

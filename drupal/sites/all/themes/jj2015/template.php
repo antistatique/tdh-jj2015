@@ -15,7 +15,7 @@ function jj2015_menu_local_tasks(&$variables) {
   if (!empty($variables['primary'])) {
     $variables['primary']['#prefix'] = '<h2 class="element-invisible">' . t('Primary tabs') . '</h2>';
     $variables['primary']['#prefix'] .= '<div class="clearfix"><ul class="tabs--primary nav nav-pills pull-right">';
-    $variables['primary']['#suffix'] = '</ul><div class="spacer spacer-xs"></div>';
+    $variables['primary']['#suffix'] = '</ul></div><div class="spacer spacer-xs"></div>';
     $output .= drupal_render($variables['primary']);
   }
 

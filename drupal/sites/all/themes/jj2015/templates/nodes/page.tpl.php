@@ -101,7 +101,7 @@
           <nav class="navbar navbar-default" role="navigation">
             <div class="container-fluid">
               <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-tdh">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-tdh">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
@@ -127,25 +127,33 @@
       </div>
     </div>
     <div class="row">
-      <section<?php print $content_column_class; ?>>
-      <?php if (!empty($page['highlighted'])): ?>
-        <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
-      <?php endif; ?>
-      <a id="main-content"></a>
-      <?php print $messages; ?>
-      <?php if (!empty($tabs)): ?>
+      <section <?php print $content_column_class; ?>>
+        <?php if (!empty($page['highlighted'])): ?>
+          <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
+        <?php endif; ?>
+        <a id="main-content"></a>
+        <?php print $messages; ?>
+        <?php if (!empty($tabs)): ?>
+          <div class="col-sm-12">
+            <?php print render($tabs); ?>
+          </div>
+        <?php endif; ?>
+        <?php if (!empty($page['help'])): ?>
+          <?php print render($page['help']); ?>
+        <?php endif; ?>
+        <?php if (!empty($action_links)): ?>
+          <ul class="action-links"><?php print render($action_links); ?></ul>
+        <?php endif; ?>
+
         <div class="col-sm-12">
-          <?php print render($tabs); ?>
+          <?php print render($page['content']); ?>
         </div>
-      <?php endif; ?>
-      <?php if (!empty($page['help'])): ?>
-        <?php print render($page['help']); ?>
-      <?php endif; ?>
-      <?php if (!empty($action_links)): ?>
-        <ul class="action-links"><?php print render($action_links); ?></ul>
-      <?php endif; ?>
-      <?php print render($page['content']); ?>
-    </section>
+
+        <div class="col-sm-8 col-sm-offset-4 spacer-bottom">
+          <?php print render($page['content_bottom']); ?>
+        </div>
+      </section>
+    </div>
 
     <?php if (!empty($page['sidebar_second'])): ?>
       <aside class="col-sm-3" role="complementary">
@@ -154,7 +162,7 @@
     <?php endif; ?>
 
   </div>
-  </div>
+</div>
 </div>
 
 <footer class="footer container">
