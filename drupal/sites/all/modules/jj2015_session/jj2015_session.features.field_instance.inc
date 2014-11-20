@@ -1170,8 +1170,8 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'above',
         'module' => 'email',
         'settings' => array(),
-        'type' => 'email_contact',
-        'weight' => 5,
+        'type' => 'email_default',
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1213,7 +1213,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1251,7 +1251,7 @@ function jj2015_session_field_default_field_instances() {
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_url_plain',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1467,7 +1467,7 @@ function jj2015_session_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
