@@ -81,7 +81,7 @@
  */
 hide($content['field_speakers']);
 if(!isset($readmore)) {
-unset($content['links']['node']['#links']['node-readmore']);
+  unset($content['links']['node']['#links']['node-readmore']);
 }
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix media"<?php print $attributes; ?>>

@@ -79,6 +79,7 @@
  *
  * @ingroup themeable
  */
+dpm($content);
 hide($content['field_name']); // may well be useless...
 hide($content['field_image']);
 hide($content['field_youtube']);
