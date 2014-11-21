@@ -44,7 +44,7 @@
  * @ingroup themeable
  */
 ?>
-<div class="<?php print $classes; ?>"<?php print $attributes; ?>>
+<div class="<?php print $classes; ?> list-group-item"<?php print $attributes; ?>>
   <?php if (!$label_hidden): ?>
     <h6 class="field-label list-group-item-heading"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</h6>
   <?php endif; ?>

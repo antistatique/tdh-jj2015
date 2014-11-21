@@ -1454,7 +1454,7 @@ function jj2015_session_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
         ),
-        'type' => 'email_default',
+        'type' => 'email_contact',
         'weight' => 6,
       ),
       'teaser' => array(

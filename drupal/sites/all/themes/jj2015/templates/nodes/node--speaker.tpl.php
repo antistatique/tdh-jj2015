@@ -104,17 +104,13 @@ hide($content['field_name']); // may well be useless...
           <?php print render($content['body']); ?>
         </div>
 
-        <div class="list-group">
-          <div class="list-group-item">
+        <?php if (isset($content['field_email']) || isset($content['field_url']) || isset($content['field_file'])): ?>
+          <div class="list-group">
             <?php print render($content['field_email']); ?>
-          </div>
-          <div class="list-group-item">
             <?php print render($content['field_url']); ?>
-          </div>
-          <div class="list-group-item">
             <?php print render($content['field_file']); ?>
           </div>
-        </div>
+        <?php endif ?>
 
         <?php print render($content); ?>
 
