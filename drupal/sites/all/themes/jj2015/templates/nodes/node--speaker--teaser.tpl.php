@@ -79,34 +79,26 @@
  *
  * @ingroup themeable
  */
+hide($content['field_speakers']);
+if(!isset($readmore)) {
+unset($content['links']['node']['#links']['node-readmore']);
+}
 ?>
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix media"<?php print $attributes; ?>>
 
-  <?php print $user_picture; ?>
+  <?php print render($content['field_image']); ?>
+  <div class="media-body clearfix">
+    <?php print render($title_prefix); ?>
+    <?php if (!$page): ?>
+      <h4 class="media-heading"><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h4>
+    <?php endif; ?>
+    <?php print render($title_suffix); ?>
 
-  <?php print render($title_prefix); ?>
-  <?php if (!$page): ?>
-    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-  <?php endif; ?>
-  <?php print render($title_suffix); ?>
-
-  <?php if ($display_submitted): ?>
-    <div class="submitted">
-      <?php print $submitted; ?>
+    <div class="content"<?php print $content_attributes; ?>>
+      <?php print render($content); ?>
     </div>
-  <?php endif; ?>
-
-  <div class="content"<?php print $content_attributes; ?>>
-    <?php
-      // We hide the comments and links now so that we can render them later.
-      hide($content['comments']);
-      hide($content['links']);
-      print render($content);
-    ?>
   </div>
 
-  <?php print render($content['links']); ?>
-
-  <?php print render($content['comments']); ?>
-
 </div>
+
+
