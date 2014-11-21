@@ -165,8 +165,23 @@
 </div>
 </div>
 
-<footer class="footer container">
-  <?php print render($page['footer']); ?>
+<footer class="footer footer-tdh super-isolate-inner">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <?php print render($page['footer_1']); ?>
+      </div>
+      <div class="col-sm-4">
+        <?php print render($page['footer_2']); ?>
+      </div>
+      <div class="col-sm-4">
+        <div class="well">
+          <?php print render($page['footer_3']); ?>
+        </div>
+      </div>
+    </div>
+    <?php print render($page['footer']); ?>
+  </div>
 </footer>
 <script type='text/javascript' id="__bs_script__">//<![CDATA[
     document.write("<script async src='//HOST:3001/browser-sync/browser-sync-client.1.6.5.js'><\/script>".replace(/HOST/g, location.hostname).replace(/PORT/g, location.port));

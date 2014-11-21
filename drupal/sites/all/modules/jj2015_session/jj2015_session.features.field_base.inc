@@ -169,6 +169,34 @@ function jj2015_session_field_default_field_bases() {
     'type' => 'file',
   );
 
+  // Exported field_base: 'field_file_type'
+  $field_bases['field_file_type'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_file_type',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'file' => 'Fichier',
+        'film' => 'Video',
+        'picture' => 'Image',
+        'bookmark' => 'Autres',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   // Exported field_base: 'field_job_title'
   $field_bases['field_job_title'] = array(
     'active' => 1,
@@ -407,6 +435,36 @@ function jj2015_session_field_default_field_bases() {
     'type' => 'field_collection',
   );
 
+  // Exported field_base: 'field_session_date'
+  $field_bases['field_session_date'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_session_date',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'date',
+    'settings' => array(
+      'cache_count' => 4,
+      'cache_enabled' => 0,
+      'granularity' => array(
+        'day' => 'day',
+        'hour' => 'hour',
+        'minute' => 'minute',
+        'month' => 'month',
+        'second' => 0,
+        'year' => 'year',
+      ),
+      'timezone_db' => 'UTC',
+      'todate' => 'optional',
+      'tz_handling' => 'site',
+    ),
+    'translatable' => 0,
+    'type' => 'datetime',
+  );
+
   // Exported field_base: 'field_session_day'
   $field_bases['field_session_day'] = array(
     'active' => 1,
@@ -541,26 +599,6 @@ function jj2015_session_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'field_collection',
-  );
-
-  // Exported field_base: 'field_time'
-  $field_bases['field_time'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_time',
-    'foreign keys' => array(),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'timefield',
-    'settings' => array(
-      'totime' => 'optional',
-      'weekly_summary' => 0,
-      'weekly_summary_with_label' => 0,
-    ),
-    'translatable' => 0,
-    'type' => 'timefield',
   );
 
   // Exported field_base: 'field_url'

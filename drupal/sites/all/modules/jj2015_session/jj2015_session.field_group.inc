@@ -27,8 +27,9 @@ function jj2015_session_field_group_info() {
       1 => 'field_featured',
       2 => 'field_image',
       3 => 'field_name',
-      4 => 'language',
-      5 => 'title',
+      4 => 'field_youtube',
+      5 => 'language',
+      6 => 'title',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -41,6 +42,67 @@ function jj2015_session_field_group_info() {
     ),
   );
   $export['group_content_tab|node|session|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_languages|node|session|default';
+  $field_group->group_name = 'group_languages';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'session';
+  $field_group->mode = 'default';
+  $field_group->parent_name = 'group_meta';
+  $field_group->data = array(
+    'label' => 'languages',
+    'weight' => '5',
+    'children' => array(
+      0 => 'field_main_language',
+      1 => 'field_languages',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'label' => 'languages',
+      'instance_settings' => array(
+        'classes' => 'text-muted bullet',
+        'element' => 'span',
+        'show_label' => '0',
+        'label_element' => '',
+        'attributes' => '',
+      ),
+    ),
+  );
+  $export['group_languages|node|session|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_meta|node|session|default';
+  $field_group->group_name = 'group_meta';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'session';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'meta',
+    'weight' => '2',
+    'children' => array(
+      0 => 'field_session_type',
+      1 => 'field_session_date',
+      2 => 'group_languages',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'label' => 'meta',
+      'instance_settings' => array(
+        'classes' => 'group-meta field-group-html-element',
+        'element' => 'p',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
+      ),
+    ),
+  );
+  $export['group_meta|node|session|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -114,6 +176,7 @@ function jj2015_session_field_group_info() {
     'children' => array(
       0 => 'field_resource_title',
       1 => 'field_file',
+      2 => 'field_file_type',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -173,8 +236,8 @@ function jj2015_session_field_group_info() {
       0 => 'field_main_language',
       1 => 'field_languages',
       2 => 'field_session_type',
-      3 => 'field_time',
-      4 => 'field_session_day',
+      3 => 'field_session_day',
+      4 => 'field_session_date',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -261,8 +324,7 @@ function jj2015_session_field_group_info() {
     'label' => 'Resources',
     'weight' => '3',
     'children' => array(
-      0 => 'field_youtube',
-      1 => 'field_resources',
+      0 => 'field_resources',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

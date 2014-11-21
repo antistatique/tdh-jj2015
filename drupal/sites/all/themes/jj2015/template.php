@@ -51,3 +51,17 @@ function jj2015_preprocess_image_style(&$vars) {
     $vars['attributes']['class'][] = 'img-responsive'; // can be 'img-rounded', 'img-circle', or 'img-thumbnail'
   }
 }
+
+function jj2015_preprocess_field(&$variables, $hook) {
+  if ($variables['element']['#entity_type'] == 'field_collection_item') {
+    // Check if the bundle name (i.e. the field collection field name) is
+    // among the theme hook suggestions.
+    $index = array_search('field__' . $variables['element']['#bundle'],
+      $variables['theme_hook_suggestions']);
+
+    // Remove the bundle theme hook suggestion.
+    if ($index !== false) {
+      unset($variables['theme_hook_suggestions'][$index]);
+    }
+  }
+}

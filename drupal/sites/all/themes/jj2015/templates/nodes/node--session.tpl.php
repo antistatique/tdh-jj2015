@@ -81,7 +81,9 @@
  */
 hide($content['field_name']); // may well be useless...
 hide($content['field_image']);
-dpm($content);
+hide($content['field_youtube']);
+hide($content['field_resources']);
+hide($content['field_resources_links']);
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
@@ -106,16 +108,17 @@ dpm($content);
         <div>
           <?php print render($content['field_image']); ?>
         </div>
-        <p class="text-muted"><?php print render($content['field_job_title']); ?> <span class="text-success"><?php print render($content['field_languages']); ?></span></p>
-
-        <div class="bio">
-          <?php print render($content['body']); ?>
-        </div>
+        <div class="spacer spacer-xs"></div>
 
         <?php print render($content); ?>
 
-        <hr>
+        <?php print render($content['field_youtube']); ?>
       </article>
+    </div>
+    <div class="row">
+      <hr>
+      <?php print render($content['field_resources']); ?>
+      <?php print render($content['field_resources_links']); ?>
     </div>
   </div>
 
