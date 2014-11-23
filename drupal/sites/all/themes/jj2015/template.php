@@ -65,3 +65,13 @@ function jj2015_preprocess_field(&$variables, $hook) {
     }
   }
 }
+
+/**
+* Implements hook_entity_info_alter().
+*/
+function jj2015_entity_info_alter(&$entity_info) {
+  $entity_info['field_collection_item']['view modes']['alternate'] = array(
+    'label' => t('Alternate'),
+    'custom settings' => TRUE,
+  );
+}
