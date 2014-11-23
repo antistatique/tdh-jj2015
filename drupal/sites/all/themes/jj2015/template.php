@@ -36,14 +36,6 @@ function jj2015_menu_local_tasks(&$variables) {
 * @see node.tpl.php
 */
 function jj2015_preprocess_node(&$variables) {
-
-  // That will let you use a template file like: node--[type|nodeid]--teaser.tpl.php
-  if($variables['view_mode'] == 'teaser') {
-    $variables['theme_hook_suggestions'][] = 'node__' . $variables['node']->type . '__teaser';
-  }
-  // if (module_exists('devel')) {
-  //  dpm($variables);
-  // }
 }
 
 function jj2015_preprocess_image_style(&$vars) {

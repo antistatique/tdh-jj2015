@@ -63,6 +63,12 @@ function jj2015_site_strongarm() {
         'custom settings' => 1,
       ),
     ),
+    'node' => array(
+      'half_teaser_thumbnail' => array(
+        'label' => 'Half Teaser Thumbnail',
+        'custom settings' => 1,
+      ),
+    ),
   );
   $export['entity_view_modes'] = $strongarm;
 
@@ -79,6 +85,23 @@ function jj2015_site_strongarm() {
   $strongarm->name = 'fences_default_markup';
   $strongarm->value = 1;
   $export['fences_default_markup'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_node__page';
+  $strongarm->value = array(
+    'view_modes' => array(
+      'half_teaser_thumbnail' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
+    'extra_fields' => array(
+      'form' => array(),
+      'display' => array(),
+    ),
+  );
+  $export['field_bundle_settings_node__page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

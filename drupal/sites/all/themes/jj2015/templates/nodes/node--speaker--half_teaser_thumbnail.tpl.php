@@ -81,30 +81,21 @@
  */
 hide($content['field_speakers']);
 if(!isset($readmore)) {
-unset($content['links']['node']['#links']['node-readmore']);
+  unset($content['links']['node']['#links']['node-readmore']);
 }
 ?>
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> thumbnail clearfix media"<?php print $attributes; ?>>
 
   <?php print render($content['field_image']); ?>
-  <div class="caption clearfix">
+  <div class="media-body clearfix">
     <?php print render($title_prefix); ?>
     <?php if (!$page): ?>
-      <h4<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h4>
+      <h4 class="media-heading"><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h4>
     <?php endif; ?>
     <?php print render($title_suffix); ?>
 
     <div class="content"<?php print $content_attributes; ?>>
-      <p><strong><?php print render($content['field_session_date']) ?></strong> <span class="text-muted bullet"><?php print render($content['field_session_type']) ?> <span class="bullet"><strong class="text-success"><?php print render($content['field_main_languages']); ?></strong> <?php print render($content['field_languages']); ?></span></span></p>
       <?php print render($content); ?>
-      <small class="pull-left"><em><?php print t('with '); ?>
-        <?php $i = 0; ?>
-        <?php print render($content['field_speakers']); ?>
-      </em></small>
-      <a href="<?php print $node_url; ?>" class="btn btn-primary pull-right" role="button"><?php print t('Read more'); ?></a>
-    </div>
-  </div>
-
-</div>
+      <!-- intentionnaly not closed here -> field-collection-item--field-speakers-thumbnail.tpl.php -->
 
 
