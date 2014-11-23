@@ -880,7 +880,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'i18n_taxonomy',
         'settings' => array(
-          'field_formatter_class' => 'text-success',
+          'field_formatter_class' => '',
         ),
         'type' => 'i18n_taxonomy_term_reference_plain',
         'weight' => 5,
@@ -931,7 +931,9 @@ function jj2015_session_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'text_default',
         'weight' => 11,
       ),
@@ -1208,7 +1210,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'i18n_taxonomy',
         'settings' => array(
-          'field_formatter_class' => 'text-muted bullet',
+          'field_formatter_class' => '',
         ),
         'type' => 'i18n_taxonomy_term_reference_plain',
         'weight' => 4,
@@ -1260,11 +1262,11 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'field_collection',
         'settings' => array(
-          'add' => 'Add',
+          'add' => 'Add new speaker',
           'delete' => 'Delete',
           'description' => 1,
           'edit' => 'Edit',
-          'field_formatter_class' => 'asdfasdfasdfasdfasdfasdfa',
+          'field_formatter_class' => '',
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
@@ -1327,7 +1329,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'youtube',
         'settings' => array(
-          'field_formatter_class' => 'text-center',
+          'field_formatter_class' => '',
           'youtube_autohide' => 0,
           'youtube_autoplay' => 0,
           'youtube_controls' => 0,

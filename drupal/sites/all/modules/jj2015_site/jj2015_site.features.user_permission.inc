@@ -201,6 +201,15 @@ function jj2015_site_user_default_permissions() {
     'module' => 'context_ui',
   );
 
+  // Exported permission: 'administer custom breadcrumbs'.
+  $permissions['administer custom breadcrumbs'] = array(
+    'name' => 'administer custom breadcrumbs',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'custom_breadcrumbs',
+  );
+
   // Exported permission: 'administer dependencies'.
   $permissions['administer dependencies'] = array(
     'name' => 'administer dependencies',
@@ -932,6 +941,15 @@ function jj2015_site_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'page_manager',
+  );
+
+  // Exported permission: 'use php in custom breadcrumbs'.
+  $permissions['use php in custom breadcrumbs'] = array(
+    'name' => 'use php in custom breadcrumbs',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'custom_breadcrumbs',
   );
 
   // Exported permission: 'use text format filtered_html'.

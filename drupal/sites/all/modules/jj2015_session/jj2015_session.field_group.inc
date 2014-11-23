@@ -55,8 +55,8 @@ function jj2015_session_field_group_info() {
     'label' => 'languages',
     'weight' => '5',
     'children' => array(
-      0 => 'field_main_language',
-      1 => 'field_languages',
+      0 => 'field_languages',
+      1 => 'field_main_language',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -85,8 +85,8 @@ function jj2015_session_field_group_info() {
     'label' => 'meta',
     'weight' => '2',
     'children' => array(
-      0 => 'field_session_type',
-      1 => 'field_session_date',
+      0 => 'field_session_date',
+      1 => 'field_session_type',
       2 => 'group_languages',
     ),
     'format_type' => 'html-element',
