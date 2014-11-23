@@ -698,7 +698,7 @@ function jj2015_session_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 6,
+      'weight' => -1,
     ),
   );
 
@@ -746,7 +746,7 @@ function jj2015_session_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 3,
+      'weight' => -3,
     ),
   );
 
@@ -813,7 +813,7 @@ function jj2015_session_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 5,
+      'weight' => -2,
     ),
   );
 
@@ -921,45 +921,31 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_name'
-  $field_instances['node-session-field_name'] = array(
+  // Exported field_instance: 'node-session-field_name_title'
+  $field_instances['node-session-field_name_title'] = array(
     'bundle' => 'session',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Le titre de la session',
+    'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
-      ),
-      'full' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
-        'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 11,
       ),
       'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
-        'type' => 'text_default',
-        'weight' => 1,
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_name',
+    'field_name' => 'field_name_title',
     'label' => 'Session Name',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -971,7 +957,7 @@ function jj2015_session_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
+      'weight' => -4,
     ),
   );
 
@@ -1390,7 +1376,7 @@ function jj2015_session_field_default_field_instances() {
       'module' => 'youtube',
       'settings' => array(),
       'type' => 'youtube',
-      'weight' => 7,
+      'weight' => 0,
     ),
   );
 
@@ -1704,49 +1690,6 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-speaker-field_name'
-  $field_instances['node-speaker-field_name'] = array(
-    'bundle' => 'speaker',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 2,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'span',
-    'field_name' => 'field_name',
-    'label' => 'Speaker Name',
-    'required' => 1,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 4,
-    ),
-  );
-
   // Exported field_instance: 'node-speaker-field_url'
   $field_instances['node-speaker-field_url'] = array(
     'bundle' => 'speaker',
@@ -1913,7 +1856,6 @@ function jj2015_session_field_default_field_instances() {
   t('Languages');
   t('Langue qui sera principalement utilisée par le speaker ');
   t('Langues dans lesquelles la session sera également disponible. <strong>Pas la langue principale! (qui s\'affichera en double sinon)</strong>');
-  t('Le titre de la session');
   t('Les langues que parle le/la speaker (durant la conférence uniquement).');
   t('Main Language');
   t('Resources');
@@ -1926,7 +1868,6 @@ function jj2015_session_field_default_field_instances() {
   t('Si coché, le/la speaker sera mis/e en avant sur la page d\'accueil.');
   t('Site internet ou autre lien lié à ce/cette speaker.');
   t('Speaker');
-  t('Speaker Name');
   t('Speakers');
   t('Séléctionnez le jour où se tiendra cette session.');
   t('Title');

@@ -26,10 +26,9 @@ function jj2015_session_field_group_info() {
       0 => 'body',
       1 => 'field_featured',
       2 => 'field_image',
-      3 => 'field_name',
-      4 => 'field_youtube',
-      5 => 'language',
-      6 => 'title',
+      3 => 'field_youtube',
+      4 => 'field_name_title',
+      5 => 'title',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -144,7 +143,7 @@ function jj2015_session_field_group_info() {
     'weight' => '0',
     'children' => array(
       0 => 'body',
-      1 => 'field_name',
+      1 => 'field_name_title',
       2 => 'field_job_title',
       3 => 'language',
       4 => 'title',
@@ -233,11 +232,11 @@ function jj2015_session_field_group_info() {
     'label' => 'Infos',
     'weight' => '2',
     'children' => array(
-      0 => 'field_main_language',
-      1 => 'field_languages',
-      2 => 'field_session_type',
+      0 => 'field_languages',
+      1 => 'field_main_language',
+      2 => 'field_session_date',
       3 => 'field_session_day',
-      4 => 'field_session_date',
+      4 => 'field_session_type',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
