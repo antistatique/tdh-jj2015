@@ -58,7 +58,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-          'field_formatter_class' => 'bullet',
+          'field_formatter_class' => '',
         ),
         'type' => 'text_default',
         'weight' => 5,
@@ -242,7 +242,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
-          'field_formatter_class' => 'bullet',
+          'field_formatter_class' => '',
           'format_type' => 'long',
           'fromto' => 'both',
           'multiple_from' => '',
@@ -330,7 +330,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-          'field_formatter_class' => 'bullet',
+          'field_formatter_class' => '',
         ),
         'type' => 'text_default',
         'weight' => 4,
@@ -367,7 +367,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'i18n_taxonomy',
         'settings' => array(
-          'field_formatter_class' => 'bullet',
+          'field_formatter_class' => '',
         ),
         'type' => 'i18n_taxonomy_term_reference_plain',
         'weight' => 2,
@@ -491,7 +491,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
-          'field_formatter_class' => 'bullet',
+          'field_formatter_class' => '',
           'format_type' => 'long',
           'fromto' => 'both',
           'multiple_from' => '',
@@ -549,11 +549,8 @@ function jj2015_session_field_default_field_instances() {
       ),
       'full' => array(
         'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
-        'type' => 'text_default',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 1,
       ),
       'token' => array(
@@ -608,10 +605,9 @@ function jj2015_session_field_default_field_instances() {
         'module' => 'entityreference',
         'settings' => array(
           'field_formatter_class' => '',
-          'links' => 1,
-          'view_mode' => 'teaser',
+          'link' => 1,
         ),
-        'type' => 'entityreference_entity_view',
+        'type' => 'entityreference_label',
         'weight' => 0,
       ),
       'token' => array(
@@ -782,7 +778,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-          'field_formatter_class' => 'img-responsive',
+          'field_formatter_class' => '',
           'image_link' => 'content',
           'image_style' => 'large',
         ),
@@ -889,7 +885,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'i18n_taxonomy',
         'settings' => array(
-          'field_formatter_class' => 'text-success',
+          'field_formatter_class' => '',
         ),
         'type' => 'i18n_taxonomy_term_reference_plain',
         'weight' => 5,
@@ -1219,7 +1215,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'i18n_taxonomy',
         'settings' => array(
-          'field_formatter_class' => 'text-muted bullet',
+          'field_formatter_class' => '',
         ),
         'type' => 'i18n_taxonomy_term_reference_plain',
         'weight' => 4,
@@ -1266,7 +1262,7 @@ function jj2015_session_field_default_field_instances() {
           'delete' => 'Delete',
           'description' => 1,
           'edit' => 'Edit',
-          'field_formatter_class' => '',
+          'field_formatter_class' => 'thumbnail',
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
@@ -1280,7 +1276,7 @@ function jj2015_session_field_default_field_instances() {
           'delete' => '',
           'description' => 0,
           'edit' => '',
-          'field_formatter_class' => 'row media-list',
+          'field_formatter_class' => '',
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
@@ -1295,14 +1291,14 @@ function jj2015_session_field_default_field_instances() {
           'description' => 0,
           'edit' => '',
           'field_formatter_class' => '',
-          'view_mode' => 'token',
+          'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
         'weight' => 7,
       ),
     ),
     'entity_type' => 'node',
-    'fences_wrapper' => 'div',
+    'fences_wrapper' => 'span',
     'field_name' => 'field_speakers',
     'label' => 'Speakers',
     'required' => 0,
@@ -1346,7 +1342,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'youtube',
         'settings' => array(
-          'field_formatter_class' => 'text-center',
+          'field_formatter_class' => '',
           'youtube_autohide' => 0,
           'youtube_autoplay' => 0,
           'youtube_controls' => 0,
@@ -1564,7 +1560,7 @@ function jj2015_session_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
           'image_link' => '',
-          'image_style' => 'large',
+          'image_style' => 'responsive',
         ),
         'type' => 'image',
         'weight' => 0,
@@ -1573,7 +1569,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-          'field_formatter_class' => 'media-object pull-left',
+          'field_formatter_class' => '',
           'image_link' => 'content',
           'image_style' => 'thumbnail',
         ),
@@ -1628,7 +1624,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-          'field_formatter_class' => 'text-muted',
+          'field_formatter_class' => '',
         ),
         'type' => 'text_default',
         'weight' => 1,

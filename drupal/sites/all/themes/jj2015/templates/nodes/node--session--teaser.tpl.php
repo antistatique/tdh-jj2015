@@ -99,13 +99,8 @@ unset($content['links']['node']['#links']['node-readmore']);
       <?php print render($content); ?>
       <small class="pull-left"><em><?php print t('with '); ?>
         <?php $i = 0; ?>
-        <?php if ($content['field_speakers'] == ''): ?>
-          <?php foreach ($content['field_speakers']['#items'] as $speaker): ?>
-            <?php $value = $speaker['value']; ?>
-            <?php print render($content['field_speakers'][$i]['entity']['field_collection_item'][$value]['field_speaker']); ?>
-            <?php $i++; ?>
-          <?php endforeach ?>
-        <?php endif ?>
+        <?php dpm($content['field_speakers']); ?>
+        <?php print render($content['field_speakers']); ?>
       </em></small>
       <a href="<?php print $node_url; ?>" class="btn btn-primary pull-right" role="button"><?php print t('Read more'); ?></a>
     </div>

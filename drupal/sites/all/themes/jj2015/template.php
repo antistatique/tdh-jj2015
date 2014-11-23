@@ -47,7 +47,7 @@ function jj2015_preprocess_node(&$variables) {
 }
 
 function jj2015_preprocess_image_style(&$vars) {
-  if ($vars['style_name'] == 'banner') {
+  if ($vars['style_name'] == 'banner' || $vars['style_name'] == 'responsive') {
     $vars['attributes']['class'][] = 'img-responsive'; // can be 'img-rounded', 'img-circle', or 'img-thumbnail'
   }
 }
