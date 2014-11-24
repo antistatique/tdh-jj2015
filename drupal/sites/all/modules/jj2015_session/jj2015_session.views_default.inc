@@ -122,22 +122,6 @@ function jj2015_session_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'session' => 'session',
   );
-  $translatables['sessions'] = array(
-    t('Master'),
-    t('Programme'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Page'),
-    t('Block'),
-    t('Sessions'),
-    t('Related Sessions Block'),
-    t('field collection item from field_speakers'),
-    t('Content entity referenced from field_speaker'),
-  );
   $export['sessions'] = $view;
 
   $view = new view();
@@ -152,7 +136,7 @@ function jj2015_session_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Speakers';
+  $handler->display->display_options['title'] = 'Intervenants';
   $handler->display->display_options['css_class'] = 'row';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
@@ -206,17 +190,6 @@ function jj2015_session_views_default_views() {
   $handler->display->display_options['menu']['name'] = 'main-menu';
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
-  $translatables['speakers'] = array(
-    t('Master'),
-    t('Speakers'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Page'),
-  );
   $export['speakers'] = $view;
 
   return $export;

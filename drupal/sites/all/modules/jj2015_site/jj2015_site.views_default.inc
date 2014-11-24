@@ -79,18 +79,6 @@ function jj2015_site_views_default_views() {
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
   $handler->display->display_options['block_description'] = 'Featured Pages';
-  $translatables['pages'] = array(
-    t('Master'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Featured (field_featured)'),
-    t('Block'),
-    t('Featured Pages'),
-  );
   $export['pages'] = $view;
 
   return $export;
