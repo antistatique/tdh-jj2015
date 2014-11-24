@@ -80,6 +80,7 @@
  * @ingroup themeable
  */
 hide($content['field_name']); // may well be useless...
+hide($content['language']);
 hide($content['links']);
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
