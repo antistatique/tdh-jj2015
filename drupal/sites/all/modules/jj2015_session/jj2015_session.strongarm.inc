@@ -34,6 +34,9 @@ function jj2015_session_strongarm() {
       'half_teaser_thumbnail' => array(
         'custom_settings' => FALSE,
       ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -41,7 +44,18 @@ function jj2015_session_strongarm() {
           'weight' => '-5',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'language' => array(
+          'teaser' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'default' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_node__session'] = $strongarm;

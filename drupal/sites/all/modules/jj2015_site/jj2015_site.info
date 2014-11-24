@@ -286,5 +286,6 @@ features[variable][] = pathauto_taxonomy_term_pattern
 features[variable][] = pathauto_taxonomy_term_session_types_pattern
 features[variable][] = pathauto_user_pattern
 features[variable][] = site_frontpage
+features[variable][] = theme_default
 features[views_view][] = pages
-mtime = 1416793882
+mtime = 1416795876

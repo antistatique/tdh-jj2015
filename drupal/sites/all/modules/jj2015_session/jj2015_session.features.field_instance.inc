@@ -539,12 +539,9 @@ function jj2015_session_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
-        'type' => 'text_default',
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 1,
       ),
       'thumbnail' => array(
@@ -554,6 +551,12 @@ function jj2015_session_field_default_field_instances() {
           'field_formatter_class' => '',
         ),
         'type' => 'text_default',
+        'weight' => 1,
+      ),
+      'token' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 1,
       ),
     ),
@@ -585,11 +588,11 @@ function jj2015_session_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
           'field_formatter_class' => '',
-          'link' => FALSE,
+          'link' => 1,
         ),
         'type' => 'entityreference_label',
         'weight' => 0,
@@ -603,6 +606,16 @@ function jj2015_session_field_default_field_instances() {
           'view_mode' => 'half_teaser_thumbnail',
         ),
         'type' => 'entityreference_entity_view',
+        'weight' => 0,
+      ),
+      'token' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_formatter_class' => '',
+          'link' => 1,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 0,
       ),
     ),
@@ -768,7 +781,7 @@ function jj2015_session_field_default_field_instances() {
           'image_style' => 'large',
         ),
         'type' => 'image',
-        'weight' => 0,
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'node',
@@ -859,11 +872,11 @@ function jj2015_session_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'i18n_taxonomy',
+        'module' => 'taxonomy',
         'settings' => array(
-          'field_formatter_class' => '',
+          'field_formatter_class' => 'text-success',
         ),
-        'type' => 'i18n_taxonomy_term_reference_plain',
+        'type' => 'taxonomy_term_reference_plain',
         'weight' => 11,
       ),
       'full' => array(
@@ -879,7 +892,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'taxonomy',
         'settings' => array(
-          'field_formatter_class' => '',
+          'field_formatter_class' => 'text-success',
         ),
         'type' => 'taxonomy_term_reference_plain',
         'weight' => 4,
@@ -919,7 +932,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 8,
       ),
     ),
     'entity_type' => 'node',
@@ -1150,7 +1163,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 9,
       ),
     ),
     'entity_type' => 'node',
@@ -1247,10 +1260,18 @@ function jj2015_session_field_default_field_instances() {
         'weight' => 3,
       ),
       'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'label' => 'inline',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => '',
+          'delete' => '',
+          'description' => 1,
+          'edit' => '',
+          'field_formatter_class' => 'teaser',
+          'view_mode' => 'token',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 7,
       ),
     ),
     'entity_type' => 'node',
