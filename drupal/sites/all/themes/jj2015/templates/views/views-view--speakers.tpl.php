@@ -27,11 +27,8 @@
  * @ingroup views_templates
  */
 ?>
-<div class="<?php print $classes; ?>">
 
-  <div class="page-header">
-    <?php if($view->human_name) print "<h1>" . $view->human_name . "</h1>"; ?>
-  </div>
+<div class="<?php print $classes; ?>">
 
   <?php if ($header): ?>
     <div class="view-header">

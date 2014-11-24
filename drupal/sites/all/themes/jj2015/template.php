@@ -38,6 +38,13 @@ function jj2015_menu_local_tasks(&$variables) {
 function jj2015_preprocess_node(&$variables) {
 }
 
+function jj2015_preprocess_page(&$variables) {
+  $variables['hide_title'] = false;
+  if (!empty($variables['node']) && ($variables['node']->type == 'speaker' || $variables['node']->type == 'session')) {
+    $variables['hide_title'] = true;
+  }
+}
+
 function jj2015_preprocess_image_style(&$vars) {
   if ($vars['style_name'] == 'banner' || $vars['style_name'] == 'responsive') {
     $vars['attributes']['class'][] = 'img-responsive'; // can be 'img-rounded', 'img-circle', or 'img-thumbnail'

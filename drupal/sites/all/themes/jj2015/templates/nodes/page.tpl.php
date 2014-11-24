@@ -124,6 +124,11 @@
     <div class="row">
       <div class="col-sm-12">
         <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
+        <?php if (!empty($title) && !$hide_title): ?>
+          <div class="page-header">
+            <h1><?php print $title ?></h1>
+          </div>
+        <?php endif; ?>
       </div>
     </div>
     <div class="row">
