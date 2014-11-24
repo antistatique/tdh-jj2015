@@ -13,119 +13,161 @@ function jj2015_session_user_default_permissions() {
   // Exported permission: 'create speaker content'.
   $permissions['create speaker content'] = array(
     'name' => 'create speaker content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'delete any speaker content'.
   $permissions['delete any speaker content'] = array(
     'name' => 'delete any speaker content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'delete own speaker content'.
   $permissions['delete own speaker content'] = array(
     'name' => 'delete own speaker content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'delete terms in event_day'.
   $permissions['delete terms in event_day'] = array(
     'name' => 'delete terms in event_day',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
     'module' => 'taxonomy',
   );
 
   // Exported permission: 'delete terms in session_types'.
   $permissions['delete terms in session_types'] = array(
     'name' => 'delete terms in session_types',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
     'module' => 'taxonomy',
   );
 
   // Exported permission: 'edit any speaker content'.
   $permissions['edit any speaker content'] = array(
     'name' => 'edit any speaker content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'edit own speaker content'.
   $permissions['edit own speaker content'] = array(
     'name' => 'edit own speaker content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'edit terms in event_day'.
   $permissions['edit terms in event_day'] = array(
     'name' => 'edit terms in event_day',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
     'module' => 'taxonomy',
   );
 
   // Exported permission: 'edit terms in session_types'.
   $permissions['edit terms in session_types'] = array(
     'name' => 'edit terms in session_types',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
     'module' => 'taxonomy',
   );
 
   // Exported permission: 'enter speaker revision log entry'.
   $permissions['enter speaker revision log entry'] = array(
     'name' => 'enter speaker revision log entry',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'override_node_options',
   );
 
   // Exported permission: 'override speaker authored by option'.
   $permissions['override speaker authored by option'] = array(
     'name' => 'override speaker authored by option',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'override_node_options',
   );
 
   // Exported permission: 'override speaker authored on option'.
   $permissions['override speaker authored on option'] = array(
     'name' => 'override speaker authored on option',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'override_node_options',
   );
 
   // Exported permission: 'override speaker promote to front page option'.
   $permissions['override speaker promote to front page option'] = array(
     'name' => 'override speaker promote to front page option',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'override_node_options',
   );
 
   // Exported permission: 'override speaker published option'.
   $permissions['override speaker published option'] = array(
     'name' => 'override speaker published option',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'override_node_options',
   );
 
   // Exported permission: 'override speaker revision option'.
   $permissions['override speaker revision option'] = array(
     'name' => 'override speaker revision option',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'override_node_options',
   );
 
   // Exported permission: 'override speaker sticky option'.
   $permissions['override speaker sticky option'] = array(
     'name' => 'override speaker sticky option',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'override_node_options',
   );
 
   // Exported permission: 'view any unpublished speaker content'.
   $permissions['view any unpublished speaker content'] = array(
     'name' => 'view any unpublished speaker content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
     'module' => 'view_unpublished',
   );
 

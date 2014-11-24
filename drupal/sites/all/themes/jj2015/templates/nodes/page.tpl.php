@@ -82,6 +82,9 @@
         </a>
       </div>
       <div class="col-md-9 col-sm-12">
+        <?php if (!empty($page['sub_nav'])): ?>
+          <?php print render($page['sub_nav']); ?>
+        <?php endif; ?>
         <div class="btn-group pull-right isolate hidden-xs">
           <a href="#" class="btn btn-primary">FR</a>
           <a href="#" class="btn btn-default">DE</a>

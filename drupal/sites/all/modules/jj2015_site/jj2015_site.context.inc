@@ -60,6 +60,12 @@ function jj2015_site_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'locale-language' => array(
+          'module' => 'locale',
+          'delta' => 'language',
+          'region' => 'sub_nav',
+          'weight' => '-10',
+        ),
         'block-1' => array(
           'module' => 'block',
           'delta' => '1',
