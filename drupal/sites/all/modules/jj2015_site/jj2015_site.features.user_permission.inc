@@ -230,7 +230,9 @@ function jj2015_site_user_default_permissions() {
   // Exported permission: 'administer devel menu items'.
   $permissions['administer devel menu items'] = array(
     'name' => 'administer devel menu items',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'menu_admin_per_menu',
   );
 
@@ -255,7 +257,9 @@ function jj2015_site_user_default_permissions() {
   // Exported permission: 'administer features menu items'.
   $permissions['administer features menu items'] = array(
     'name' => 'administer features menu items',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'menu_admin_per_menu',
   );
 
