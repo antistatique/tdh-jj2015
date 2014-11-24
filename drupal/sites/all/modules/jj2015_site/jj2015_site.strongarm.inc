@@ -344,8 +344,8 @@ function jj2015_site_strongarm() {
   $strongarm->name = 'i18n_string_allowed_formats';
   $strongarm->value = array(
     'filtered_html' => 'filtered_html',
+    'full_html' => 'full_html',
     'plain_text' => 'plain_text',
-    'full_html' => 0,
   );
   $export['i18n_string_allowed_formats'] = $strongarm;
 

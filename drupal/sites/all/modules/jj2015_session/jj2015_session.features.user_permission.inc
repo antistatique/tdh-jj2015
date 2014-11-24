@@ -25,6 +25,7 @@ function jj2015_session_user_default_permissions() {
     'name' => 'delete any speaker content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -64,6 +65,7 @@ function jj2015_session_user_default_permissions() {
     'name' => 'edit any speaker content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );

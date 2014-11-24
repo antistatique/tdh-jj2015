@@ -25,6 +25,7 @@ function jj2015_site_user_default_permissions() {
     'name' => 'access administration pages',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'system',
   );
@@ -82,6 +83,7 @@ function jj2015_site_user_default_permissions() {
     'name' => 'access contextual links',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'contextual',
   );
@@ -335,7 +337,6 @@ function jj2015_site_user_default_permissions() {
     'name' => 'administer menu',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
     ),
     'module' => 'menu',
   );
@@ -410,15 +411,6 @@ function jj2015_site_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'search',
-  );
-
-  // Exported permission: 'administer shortcuts'.
-  $permissions['administer shortcuts'] = array(
-    'name' => 'administer shortcuts',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'shortcut',
   );
 
   // Exported permission: 'administer site configuration'.
@@ -606,20 +598,12 @@ function jj2015_site_user_default_permissions() {
     'module' => 'ckeditor',
   );
 
-  // Exported permission: 'customize shortcut links'.
-  $permissions['customize shortcut links'] = array(
-    'name' => 'customize shortcut links',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'shortcut',
-  );
-
   // Exported permission: 'delete any page content'.
   $permissions['delete any page content'] = array(
     'name' => 'delete any page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -629,6 +613,7 @@ function jj2015_site_user_default_permissions() {
     'name' => 'delete any session content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -704,6 +689,7 @@ function jj2015_site_user_default_permissions() {
     'name' => 'edit any session content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -966,15 +952,6 @@ function jj2015_site_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'switch shortcut sets'.
-  $permissions['switch shortcut sets'] = array(
-    'name' => 'switch shortcut sets',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'shortcut',
-  );
-
   // Exported permission: 'switch users'.
   $permissions['switch users'] = array(
     'name' => 'switch users',
@@ -1064,6 +1041,7 @@ function jj2015_site_user_default_permissions() {
     'name' => 'use text format full_html',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'filter',
   );
