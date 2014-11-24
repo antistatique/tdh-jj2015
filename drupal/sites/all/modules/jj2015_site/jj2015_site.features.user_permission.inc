@@ -335,6 +335,7 @@ function jj2015_site_user_default_permissions() {
     'name' => 'administer menu',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'menu',
   );
@@ -684,10 +685,7 @@ function jj2015_site_user_default_permissions() {
   // Exported permission: 'display drupal links'.
   $permissions['display drupal links'] = array(
     'name' => 'display drupal links',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-    ),
+    'roles' => array(),
     'module' => 'admin_menu',
   );
 
