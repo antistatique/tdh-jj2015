@@ -1,5 +1,8 @@
 set :application,     "jj2015"
 
+# load custom recipes
+load 'config/recipes.rb'
+
 # Relative path to thedrupal path
 set :app_path,        "drupal"
 set :shared_children, ['drupal/sites/default/files','private-files']
@@ -26,6 +29,10 @@ role :db,            domain
 
 set  :keep_releases,   3
 after "deploy:update", "deploy:cleanup"
+
+after "deploy:update_code", "styleguide:update"
+after "deploy:update_code", "styleguide:build"
+after "deploy:update_code", "styleguide:copy_build"
 
 # Be more verbose by uncommenting the following line
 #logger.level = Logger::MAX_LEVEL
