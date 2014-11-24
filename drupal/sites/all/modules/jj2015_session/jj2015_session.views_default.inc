@@ -73,6 +73,48 @@ function jj2015_session_views_default_views() {
   $handler = $view->new_display('block', 'Block', 'block');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Sessions';
+
+  /* Display: Related Sessions Block */
+  $handler = $view->new_display('block', 'Related Sessions Block', 'block_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'views_bootstrap_thumbnail_plugin_style';
+  $handler->display->display_options['style_options']['columns'] = '3';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'node';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Content: Speakers (field_speakers) */
+  $handler->display->display_options['relationships']['field_speakers_value']['id'] = 'field_speakers_value';
+  $handler->display->display_options['relationships']['field_speakers_value']['table'] = 'field_data_field_speakers';
+  $handler->display->display_options['relationships']['field_speakers_value']['field'] = 'field_speakers_value';
+  $handler->display->display_options['relationships']['field_speakers_value']['required'] = TRUE;
+  $handler->display->display_options['relationships']['field_speakers_value']['delta'] = '-1';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_speaker_target_id']['id'] = 'field_speaker_target_id';
+  $handler->display->display_options['relationships']['field_speaker_target_id']['table'] = 'field_data_field_speaker';
+  $handler->display->display_options['relationships']['field_speaker_target_id']['field'] = 'field_speaker_target_id';
+  $handler->display->display_options['relationships']['field_speaker_target_id']['relationship'] = 'field_speakers_value';
+  $handler->display->display_options['relationships']['field_speaker_target_id']['required'] = TRUE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'session' => 'session',
+  );
   $translatables['sessions'] = array(
     t('Master'),
     t('Programme'),
@@ -85,6 +127,9 @@ function jj2015_session_views_default_views() {
     t('Page'),
     t('Block'),
     t('Sessions'),
+    t('Related Sessions Block'),
+    t('field collection item from field_speakers'),
+    t('Content entity referenced from field_speaker'),
   );
   $export['sessions'] = $view;
 

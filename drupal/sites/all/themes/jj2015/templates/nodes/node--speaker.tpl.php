@@ -116,6 +116,8 @@ hide($content['field_name']); // may well be useless...
 
         <hr>
 
+        <?php print render($region['content_bottom']); ?>
+
       </div>
     </div>
   </div>
