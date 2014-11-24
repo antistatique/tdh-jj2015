@@ -85,12 +85,6 @@
         <?php if (!empty($page['sub_nav'])): ?>
           <?php print render($page['sub_nav']); ?>
         <?php endif; ?>
-        <div class="btn-group pull-right isolate hidden-xs">
-          <a href="#" class="btn btn-primary">FR</a>
-          <a href="#" class="btn btn-default">DE</a>
-          <a href="#" class="btn btn-default">EN</a>
-          <a href="#" class="btn btn-default">ES</a>
-        </div>
         <h1 class="h3"><?php print $site_name; ?></h1>
       </div>
     </div>

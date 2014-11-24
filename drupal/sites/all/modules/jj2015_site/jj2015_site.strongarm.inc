@@ -111,6 +111,13 @@ function jj2015_site_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'custom_breadcrumbs_show_form_table_speaker';
+  $strongarm->value = 1;
+  $export['custom_breadcrumbs_show_form_table_speaker'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'custom_breadcrumbs_sort';
   $strongarm->value = array(
     'direction' => array(
@@ -288,6 +295,13 @@ function jj2015_site_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'i18n_language_list';
+  $strongarm->value = '4';
+  $export['i18n_language_list'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'i18n_node_extended_page';
   $strongarm->value = 1;
   $export['i18n_node_extended_page'] = $strongarm;
@@ -298,6 +312,24 @@ function jj2015_site_strongarm() {
   $strongarm->name = 'i18n_node_options_page';
   $strongarm->value = array();
   $export['i18n_node_options_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'i18n_string_allowed_formats';
+  $strongarm->value = array(
+    'filtered_html' => 'filtered_html',
+    'plain_text' => 'plain_text',
+    'full_html' => 0,
+  );
+  $export['i18n_string_allowed_formats'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'i18n_string_source_language';
+  $strongarm->value = 'fr';
+  $export['i18n_string_source_language'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -319,6 +351,13 @@ function jj2015_site_strongarm() {
   $strongarm->name = 'language_content_type_page';
   $strongarm->value = '2';
   $export['language_content_type_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'language_switcher_mode';
+  $strongarm->value = 'multi';
+  $export['language_switcher_mode'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

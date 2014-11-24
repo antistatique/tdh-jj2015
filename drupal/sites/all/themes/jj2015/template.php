@@ -78,3 +78,42 @@ function jj2015_preprocess_field(&$variables, $hook) {
     }
   }
 }
+
+function jj2015_links__locale_block(&$variables) {
+  // the global $language variable tells you what the current language is
+  global $language;
+
+  // an array of list items
+  $items = array();
+  foreach($variables['links'] as $lang => $info) {
+
+    $name     = $info['language']->native;
+    $href     = isset($info['href']) ? $info['href'] : '';
+    $li_classes   = array('list-item-class');
+
+    // if the global language is that of this item's language, add the active class
+    if($lang === $language->language){
+      $link_classes = array('btn', 'btn-primary');
+    } else {
+      $link_classes = array('btn', 'btn-default');
+    }
+    $options = array('attributes' => array('class'    => $link_classes),
+     'language' => $info['language'],
+     'html'     => true
+     );
+    $link = l($name, $href, $options);
+
+    // display only translated links
+    if ($href) $items[] = array('data' => $link, 'class' => $li_classes);
+  }
+
+  // output
+  $attributes = array('class' => array('my-list'));
+  $output = '';
+  $output .= '<div class="btn-group isolate hidden-xs">';
+  foreach ($items as $item => $value) {
+    $output .= $value['data'];
+  }
+  $output .= '</div>';
+  return $output;
+}

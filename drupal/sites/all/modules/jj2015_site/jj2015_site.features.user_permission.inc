@@ -293,6 +293,15 @@ function jj2015_site_user_default_permissions() {
     'module' => 'image',
   );
 
+  // Exported permission: 'administer language_switcher'.
+  $permissions['administer language_switcher'] = array(
+    'name' => 'administer language_switcher',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'language_switcher',
+  );
+
   // Exported permission: 'administer languages'.
   $permissions['administer languages'] = array(
     'name' => 'administer languages',
@@ -498,6 +507,16 @@ function jj2015_site_user_default_permissions() {
     'name' => 'assign all roles',
     'roles' => array(
       'administrator' => 'administrator',
+    ),
+    'module' => 'role_delegation',
+  );
+
+  // Exported permission: 'assign editor role'.
+  $permissions['assign editor role'] = array(
+    'name' => 'assign editor role',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'role_delegation',
   );
