@@ -53,7 +53,7 @@ function jj2015_session_field_group_info() {
   $field_group->parent_name = 'group_meta';
   $field_group->data = array(
     'label' => 'languages',
-    'weight' => '5',
+    'weight' => '13',
     'children' => array(
       0 => 'field_languages',
       1 => 'field_main_language',
@@ -83,7 +83,7 @@ function jj2015_session_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'meta',
-    'weight' => '2',
+    'weight' => '1',
     'children' => array(
       0 => 'field_session_date',
       1 => 'field_session_type',

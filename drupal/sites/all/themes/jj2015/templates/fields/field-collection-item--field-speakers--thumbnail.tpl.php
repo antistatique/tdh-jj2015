@@ -27,7 +27,6 @@
  * @see template_preprocess_entity()
  * @see template_process()
  */
-dpm($content);
 $field_speaker = $content['field_speaker']['#items'][0]['entity'];
 ?>
 <!-- markup begins in node--speaker--half.... -->

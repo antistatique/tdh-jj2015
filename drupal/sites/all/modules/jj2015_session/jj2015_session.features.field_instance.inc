@@ -17,12 +17,6 @@ function jj2015_session_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
-      'alternate' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -60,12 +54,6 @@ function jj2015_session_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
-      'alternate' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -102,12 +90,6 @@ function jj2015_session_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
-      'alternate' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'file',
@@ -152,12 +134,6 @@ function jj2015_session_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
-      'alternate' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'list',
@@ -192,12 +168,6 @@ function jj2015_session_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
-      'alternate' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'taxonomy',
@@ -232,12 +202,6 @@ function jj2015_session_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
-      'alternate' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -274,12 +238,6 @@ function jj2015_session_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
-      'alternate' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'date',
@@ -331,12 +289,6 @@ function jj2015_session_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
-      'alternate' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -374,12 +326,6 @@ function jj2015_session_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
-      'alternate' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -417,12 +363,6 @@ function jj2015_session_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
-      'alternate' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'i18n_taxonomy',
@@ -457,12 +397,6 @@ function jj2015_session_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
-      'alternate' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -500,12 +434,6 @@ function jj2015_session_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
-      'alternate' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'link',
@@ -559,12 +487,6 @@ function jj2015_session_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
-      'alternate' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'date',
@@ -616,25 +538,13 @@ function jj2015_session_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
-      'alternate' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'text',
         'settings' => array(
           'field_formatter_class' => '',
         ),
         'type' => 'text_default',
-        'weight' => 1,
-      ),
-      'full' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
         'weight' => 1,
       ),
       'thumbnail' => array(
@@ -646,17 +556,9 @@ function jj2015_session_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 1,
       ),
-      'token' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
     ),
     'entity_type' => 'field_collection_item',
+    'fences_wrapper' => 'div',
     'field_name' => 'field_description',
     'label' => 'Description',
     'required' => 0,
@@ -682,29 +584,12 @@ function jj2015_session_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
-      'alternate' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
           'field_formatter_class' => '',
-          'links' => 1,
-          'view_mode' => 'teaser',
-        ),
-        'type' => 'entityreference_entity_view',
-        'weight' => 0,
-      ),
-      'full' => array(
-        'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'field_formatter_class' => '',
-          'link' => 1,
+          'link' => FALSE,
         ),
         'type' => 'entityreference_label',
         'weight' => 0,
@@ -713,21 +598,11 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
-          'field_formatter_class' => 'col-sm-6',
+          'field_formatter_class' => '',
           'links' => 1,
           'view_mode' => 'half_teaser_thumbnail',
         ),
         'type' => 'entityreference_entity_view',
-        'weight' => 0,
-      ),
-      'token' => array(
-        'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'field_formatter_class' => '',
-          'link' => 1,
-        ),
-        'type' => 'entityreference_label',
         'weight' => 0,
       ),
     ),
@@ -766,7 +641,7 @@ function jj2015_session_field_default_field_instances() {
           'field_formatter_class' => '',
         ),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 2,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -823,7 +698,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 9,
       ),
       'full' => array(
         'label' => 'above',
@@ -937,7 +812,7 @@ function jj2015_session_field_default_field_instances() {
           'field_formatter_class' => '',
         ),
         'type' => 'i18n_taxonomy_term_reference_plain',
-        'weight' => 6,
+        'weight' => 12,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -971,7 +846,7 @@ function jj2015_session_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 17,
+      'weight' => 18,
     ),
   );
 
@@ -989,7 +864,7 @@ function jj2015_session_field_default_field_instances() {
           'field_formatter_class' => '',
         ),
         'type' => 'i18n_taxonomy_term_reference_plain',
-        'weight' => 5,
+        'weight' => 11,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -1023,7 +898,7 @@ function jj2015_session_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 16,
+      'weight' => 17,
     ),
   );
 
@@ -1036,12 +911,9 @@ function jj2015_session_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
-        'type' => 'text_default',
-        'weight' => 11,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1084,7 +956,7 @@ function jj2015_session_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'full' => array(
         'label' => 'above',
@@ -1138,7 +1010,7 @@ function jj2015_session_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 7,
+        'weight' => 6,
       ),
       'full' => array(
         'label' => 'above',
@@ -1195,7 +1067,7 @@ function jj2015_session_field_default_field_instances() {
           'multiple_to' => '',
         ),
         'type' => 'date_default',
-        'weight' => 3,
+        'weight' => 11,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -1315,7 +1187,7 @@ function jj2015_session_field_default_field_instances() {
           'field_formatter_class' => '',
         ),
         'type' => 'i18n_taxonomy_term_reference_plain',
-        'weight' => 4,
+        'weight' => 12,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -1368,39 +1240,17 @@ function jj2015_session_field_default_field_instances() {
           'delete' => '',
           'description' => 0,
           'edit' => '',
-          'field_formatter_class' => 'thumbnail',
+          'field_formatter_class' => 'col-sm-6',
           'view_mode' => 'thumbnail',
         ),
         'type' => 'field_collection_view',
         'weight' => 3,
       ),
-      'full' => array(
-        'label' => 'hidden',
-        'module' => 'field_collection',
-        'settings' => array(
-          'add' => '',
-          'delete' => '',
-          'description' => 0,
-          'edit' => '',
-          'field_formatter_class' => '',
-          'view_mode' => 'full',
-        ),
-        'type' => 'field_collection_view',
-        'weight' => 7,
-      ),
       'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'field_collection',
-        'settings' => array(
-          'add' => '',
-          'delete' => '',
-          'description' => 0,
-          'edit' => '',
-          'field_formatter_class' => '',
-          'view_mode' => 'full',
-        ),
-        'type' => 'field_collection_view',
-        'weight' => 7,
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
@@ -1416,7 +1266,7 @@ function jj2015_session_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 17,
+      'weight' => 16,
     ),
   );
 
@@ -1442,7 +1292,7 @@ function jj2015_session_field_default_field_instances() {
           'youtube_width' => '',
         ),
         'type' => 'youtube_video',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'full' => array(
         'label' => 'hidden',

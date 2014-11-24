@@ -42,6 +42,9 @@ function jj2015_preprocess_image_style(&$vars) {
   if ($vars['style_name'] == 'banner' || $vars['style_name'] == 'responsive') {
     $vars['attributes']['class'][] = 'img-responsive'; // can be 'img-rounded', 'img-circle', or 'img-thumbnail'
   }
+  if ($vars['style_name'] == 'thumbnail') {
+    $vars['attributes']['class'][] = 'img-responsive'; // can be 'img-rounded', 'img-circle', or 'img-thumbnail'
+  }
 }
 
 function jj2015_preprocess_field(&$variables, $hook) {
@@ -56,14 +59,4 @@ function jj2015_preprocess_field(&$variables, $hook) {
       unset($variables['theme_hook_suggestions'][$index]);
     }
   }
-}
-
-/**
-* Implements hook_entity_info_alter().
-*/
-function jj2015_entity_info_alter(&$entity_info) {
-  $entity_info['field_collection_item']['view modes']['alternate'] = array(
-    'label' => t('Alternate'),
-    'custom settings' => TRUE,
-  );
 }
