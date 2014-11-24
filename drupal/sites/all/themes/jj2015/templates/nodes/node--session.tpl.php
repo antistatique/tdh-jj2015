@@ -85,6 +85,7 @@ hide($content['field_youtube']);
 hide($content['field_resources']);
 hide($content['field_resources_links']);
 hide($content['language']);
+hide($content['links']);
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
