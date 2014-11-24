@@ -121,6 +121,15 @@
         </div>
       </div>
     </div>
+    <?php if (!empty($page['header'])): ?>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="thumbnail clearfix">
+            <?php print render($page['header']); ?>
+          </div>
+        </div>
+      </div>
+    <?php endif; ?>
     <div class="row">
       <div class="col-sm-12">
         <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
@@ -131,11 +140,15 @@
         <?php endif; ?>
       </div>
     </div>
+    <?php if (!empty($page['highlighted'])): ?>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="highlighted"><?php print render($page['highlighted']); ?></div>
+        </div>
+      </div>
+    <?php endif; ?>
     <div class="row">
       <section <?php print $content_column_class; ?>>
-        <?php if (!empty($page['highlighted'])): ?>
-          <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
-        <?php endif; ?>
         <a id="main-content"></a>
         <?php print $messages; ?>
         <?php if (!empty($tabs)): ?>

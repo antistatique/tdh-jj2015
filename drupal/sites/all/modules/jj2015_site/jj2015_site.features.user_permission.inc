@@ -226,6 +226,15 @@ function jj2015_site_user_default_permissions() {
     'module' => 'menu_admin_per_menu',
   );
 
+  // Exported permission: 'administer entity view modes'.
+  $permissions['administer entity view modes'] = array(
+    'name' => 'administer entity view modes',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'entity_view_mode',
+  );
+
   // Exported permission: 'administer features'.
   $permissions['administer features'] = array(
     'name' => 'administer features',
@@ -357,6 +366,15 @@ function jj2015_site_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'page_manager',
+  );
+
+  // Exported permission: 'administer pathauto'.
+  $permissions['administer pathauto'] = array(
+    'name' => 'administer pathauto',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'pathauto',
   );
 
   // Exported permission: 'administer permissions'.
@@ -719,6 +737,15 @@ function jj2015_site_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'features',
+  );
+
+  // Exported permission: 'notify of path changes'.
+  $permissions['notify of path changes'] = array(
+    'name' => 'notify of path changes',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'pathauto',
   );
 
   // Exported permission: 'override page authored by option'.

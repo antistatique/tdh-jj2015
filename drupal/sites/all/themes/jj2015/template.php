@@ -40,7 +40,7 @@ function jj2015_preprocess_node(&$variables) {
 
 function jj2015_preprocess_page(&$variables) {
   $variables['hide_title'] = false;
-  if (!empty($variables['node']) && ($variables['node']->type == 'speaker' || $variables['node']->type == 'session')) {
+  if (!empty($variables['node']) && ($variables['node']->type == 'speaker' || $variables['node']->type == 'session' || $variables["is_front"])) {
     $variables['hide_title'] = true;
   }
 }
