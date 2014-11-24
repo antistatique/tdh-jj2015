@@ -81,6 +81,7 @@
  */
 hide($content['comments']);
 hide($content['links']);
+hide($content['language']);
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
