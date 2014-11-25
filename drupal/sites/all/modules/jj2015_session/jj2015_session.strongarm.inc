@@ -48,11 +48,11 @@ function jj2015_session_strongarm() {
         'language' => array(
           'teaser' => array(
             'weight' => '0',
-            'visible' => TRUE,
+            'visible' => FALSE,
           ),
           'default' => array(
             'weight' => '0',
-            'visible' => TRUE,
+            'visible' => FALSE,
           ),
         ),
       ),
@@ -84,10 +84,28 @@ function jj2015_session_strongarm() {
       'half_teaser_thumbnail' => array(
         'custom_settings' => TRUE,
       ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(),
-      'display' => array(),
+      'display' => array(
+        'language' => array(
+          'default' => array(
+            'weight' => '0',
+            'visible' => FALSE,
+          ),
+          'teaser' => array(
+            'weight' => '0',
+            'visible' => FALSE,
+          ),
+          'half_teaser_thumbnail' => array(
+            'weight' => '0',
+            'visible' => FALSE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_node__speaker'] = $strongarm;
@@ -103,7 +121,7 @@ function jj2015_session_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'i18n_node_extended_speaker';
-  $strongarm->value = 1;
+  $strongarm->value = '1';
   $export['i18n_node_extended_speaker'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -177,7 +195,7 @@ function jj2015_session_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_parent_speaker';
-  $strongarm->value = 'main-menu:0';
+  $strongarm->value = 'main-menu:643';
   $export['menu_parent_speaker'] = $strongarm;
 
   $strongarm = new stdClass();
