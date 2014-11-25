@@ -89,7 +89,17 @@ function jj2015_session_strongarm() {
       ),
     ),
     'extra_fields' => array(
-      'form' => array(),
+      'form' => array(
+        'language' => array(
+          'weight' => '0',
+        ),
+        'title' => array(
+          'weight' => '-5',
+        ),
+        'path' => array(
+          'weight' => '3',
+        ),
+      ),
       'display' => array(
         'language' => array(
           'default' => array(

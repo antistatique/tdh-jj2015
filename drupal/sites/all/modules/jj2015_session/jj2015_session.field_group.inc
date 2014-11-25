@@ -140,13 +140,11 @@ function jj2015_session_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Content',
-    'weight' => '0',
+    'weight' => '1',
     'children' => array(
       0 => 'body',
-      1 => 'field_name_title',
-      2 => 'field_job_title',
-      3 => 'language',
-      4 => 'title',
+      1 => 'field_job_title',
+      2 => 'title',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -261,14 +259,14 @@ function jj2015_session_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Infos',
-    'weight' => '1',
+    'weight' => '2',
     'children' => array(
-      0 => 'field_featured',
-      1 => 'field_languages',
-      2 => 'field_image',
-      3 => 'field_url',
-      4 => 'field_file',
-      5 => 'field_email',
+      0 => 'field_email',
+      1 => 'field_featured',
+      2 => 'field_file',
+      3 => 'field_image',
+      4 => 'field_languages',
+      5 => 'field_url',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
