@@ -51,9 +51,9 @@ function jj2015_site_context_default_contexts() {
   $context->description = '';
   $context->tag = '';
   $context->conditions = array(
-    'path' => array(
+    'sitewide' => array(
       'values' => array(
-        '*' => '*',
+        1 => 1,
       ),
     ),
   );
@@ -70,6 +70,18 @@ function jj2015_site_context_default_contexts() {
           'module' => 'block',
           'delta' => '1',
           'region' => 'footer_1',
+          'weight' => '-10',
+        ),
+        'block-3' => array(
+          'module' => 'block',
+          'delta' => '3',
+          'region' => 'footer_2',
+          'weight' => '-10',
+        ),
+        'block-4' => array(
+          'module' => 'block',
+          'delta' => '4',
+          'region' => 'footer_3',
           'weight' => '-10',
         ),
       ),
