@@ -152,14 +152,33 @@ function jj2015_session_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'i18n_sync_node_type_session';
-  $strongarm->value = array();
+  $strongarm->value = array(
+    0 => 'field_featured',
+    1 => 'field_languages',
+    2 => 'field_main_language',
+    3 => 'field_session_date',
+    4 => 'field_session_day',
+    5 => 'field_session_type',
+    6 => 'field_speakers',
+    7 => 'status',
+    8 => 'promote',
+    9 => 'sticky',
+  );
   $export['i18n_sync_node_type_session'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'i18n_sync_node_type_speaker';
-  $strongarm->value = array();
+  $strongarm->value = array(
+    0 => 'field_email',
+    1 => 'field_featured',
+    2 => 'field_image',
+    3 => 'field_languages',
+    4 => 'status',
+    5 => 'promote',
+    6 => 'sticky',
+  );
   $export['i18n_sync_node_type_speaker'] = $strongarm;
 
   $strongarm = new stdClass();

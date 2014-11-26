@@ -16,6 +16,7 @@ function jj2015_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'translator' => 'translator',
     ),
     'module' => 'admin_menu',
   );
@@ -26,6 +27,7 @@ function jj2015_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'translator' => 'translator',
     ),
     'module' => 'system',
   );
@@ -121,6 +123,7 @@ function jj2015_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'translator' => 'translator',
     ),
     'module' => 'user',
   );
@@ -313,6 +316,7 @@ function jj2015_site_user_default_permissions() {
     'name' => 'administer languages',
     'roles' => array(
       'administrator' => 'administrator',
+      'translator' => 'translator',
     ),
     'module' => 'locale',
   );
@@ -405,6 +409,7 @@ function jj2015_site_user_default_permissions() {
     'name' => 'administer pathauto',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'pathauto',
   );
@@ -561,6 +566,7 @@ function jj2015_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'translator' => 'translator',
     ),
     'module' => 'user',
   );
@@ -990,6 +996,7 @@ function jj2015_site_user_default_permissions() {
     'name' => 'translate admin strings',
     'roles' => array(
       'administrator' => 'administrator',
+      'translator' => 'translator',
     ),
     'module' => 'i18n_string',
   );
@@ -1000,6 +1007,7 @@ function jj2015_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'translator' => 'translator',
     ),
     'module' => 'translation',
   );
@@ -1009,6 +1017,7 @@ function jj2015_site_user_default_permissions() {
     'name' => 'translate interface',
     'roles' => array(
       'administrator' => 'administrator',
+      'translator' => 'translator',
     ),
     'module' => 'locale',
   );
@@ -1018,6 +1027,7 @@ function jj2015_site_user_default_permissions() {
     'name' => 'translate user-defined strings',
     'roles' => array(
       'administrator' => 'administrator',
+      'translator' => 'translator',
     ),
     'module' => 'i18n_string',
   );
