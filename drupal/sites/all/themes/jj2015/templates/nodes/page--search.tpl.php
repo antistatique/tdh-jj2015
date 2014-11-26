@@ -163,7 +163,7 @@
           <ul class="action-links"><?php print render($action_links); ?></ul>
         <?php endif; ?>
 
-        <div class="col-sm-12">
+        <div class="col-sm-8 col-md-offset-2">
           <?php print render($page['content']); ?>
           <?php print render($page['content_bottom_wide']); ?>
         </div>
