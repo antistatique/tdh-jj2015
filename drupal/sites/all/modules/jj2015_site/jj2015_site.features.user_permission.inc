@@ -1057,9 +1057,7 @@ function jj2015_site_user_default_permissions() {
   // Exported permission: 'use advanced search'.
   $permissions['use advanced search'] = array(
     'name' => 'use advanced search',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'search',
   );
 
