@@ -162,6 +162,7 @@
 
         <div class="col-sm-12">
           <?php print render($page['content']); ?>
+          <?php print render($page['content_bottom_wide']); ?>
         </div>
 
         <div class="col-sm-8 col-sm-offset-4 spacer-bottom">

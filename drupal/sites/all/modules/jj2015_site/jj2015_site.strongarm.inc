@@ -304,7 +304,20 @@ function jj2015_site_strongarm() {
       ),
     ),
     'extra_fields' => array(
-      'form' => array(),
+      'form' => array(
+        'language' => array(
+          'weight' => '0',
+        ),
+        'metatags' => array(
+          'weight' => '40',
+        ),
+        'title' => array(
+          'weight' => '-5',
+        ),
+        'path' => array(
+          'weight' => '30',
+        ),
+      ),
       'display' => array(
         'language' => array(
           'default' => array(
@@ -407,6 +420,7 @@ function jj2015_site_strongarm() {
   $strongarm->name = 'menu_options_page';
   $strongarm->value = array(
     0 => 'main-menu',
+    1 => 'menu-session-menu',
   );
   $export['menu_options_page'] = $strongarm;
 
@@ -465,7 +479,7 @@ function jj2015_site_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_pattern';
-  $strongarm->value = 'content/[node:title]';
+  $strongarm->value = '[node:title]';
   $export['pathauto_node_pattern'] = $strongarm;
 
   $strongarm = new stdClass();

@@ -1122,6 +1122,13 @@ function jj2015_site_user_default_permissions() {
     'module' => 'view_unpublished',
   );
 
+  // Exported permission: 'view any unpublished event_day content'.
+  $permissions['view any unpublished event_day content'] = array(
+    'name' => 'view any unpublished event_day content',
+    'roles' => array(),
+    'module' => 'view_unpublished',
+  );
+
   // Exported permission: 'view any unpublished page content'.
   $permissions['view any unpublished page content'] = array(
     'name' => 'view any unpublished page content',

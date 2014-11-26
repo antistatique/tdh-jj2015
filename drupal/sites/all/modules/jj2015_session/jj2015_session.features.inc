@@ -31,6 +31,14 @@ function jj2015_session_views_api($module = NULL, $api = NULL) {
  */
 function jj2015_session_node_info() {
   $items = array(
+    'event_day' => array(
+      'name' => t('Event Day'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'session' => array(
       'name' => t('Session'),
       'base' => 'node_content',
