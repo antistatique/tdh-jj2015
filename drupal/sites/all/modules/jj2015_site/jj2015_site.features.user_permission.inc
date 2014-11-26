@@ -86,6 +86,7 @@ function jj2015_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'translator' => 'translator',
     ),
     'module' => 'contextual',
   );
@@ -1166,6 +1167,7 @@ function jj2015_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'translator' => 'translator',
     ),
     'module' => 'system',
   );
