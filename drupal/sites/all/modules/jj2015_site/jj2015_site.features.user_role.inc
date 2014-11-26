@@ -22,5 +22,11 @@ function jj2015_site_user_default_roles() {
     'weight' => 3,
   );
 
+  // Exported role: translator.
+  $roles['translator'] = array(
+    'name' => 'translator',
+    'weight' => 4,
+  );
+
   return $roles;
 }

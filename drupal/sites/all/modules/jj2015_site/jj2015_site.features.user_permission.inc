@@ -533,6 +533,16 @@ function jj2015_site_user_default_permissions() {
     'module' => 'role_delegation',
   );
 
+  // Exported permission: 'assign translator role'.
+  $permissions['assign translator role'] = array(
+    'name' => 'assign translator role',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
+    'module' => 'role_delegation',
+  );
+
   // Exported permission: 'block IP addresses'.
   $permissions['block IP addresses'] = array(
     'name' => 'block IP addresses',
@@ -982,6 +992,16 @@ function jj2015_site_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: 'submit translations to localization server'.
+  $permissions['submit translations to localization server'] = array(
+    'name' => 'submit translations to localization server',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'translator' => 'translator',
+    ),
+    'module' => 'l10n_client',
+  );
+
   // Exported permission: 'switch users'.
   $permissions['switch users'] = array(
     'name' => 'switch users',
@@ -1039,6 +1059,16 @@ function jj2015_site_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'search',
+  );
+
+  // Exported permission: 'use on-page translation'.
+  $permissions['use on-page translation'] = array(
+    'name' => 'use on-page translation',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'translator' => 'translator',
+    ),
+    'module' => 'l10n_client',
   );
 
   // Exported permission: 'use page manager'.
