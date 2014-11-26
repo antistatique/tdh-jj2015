@@ -108,7 +108,7 @@ function jj2015_session_field_default_field_instances() {
     'settings' => array(
       'description_field' => 0,
       'file_directory' => '',
-      'file_extensions' => 'pdf txt doc zip rar',
+      'file_extensions' => 'pdf txt doc zip rar docx',
       'max_filesize' => '10 MB',
       'user_register_form' => FALSE,
     ),
