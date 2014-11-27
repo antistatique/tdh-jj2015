@@ -81,6 +81,7 @@
  */
 hide($content['field_speakers']);
 hide($content['language']);
+hide($content['links']);
 if(!isset($readmore)) {
   unset($content['links']['node']['#links']['node-readmore']);
 }
