@@ -294,7 +294,7 @@ function jj2015_site_strongarm() {
         'custom_settings' => FALSE,
       ),
       'search_index' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'search_result' => array(
         'custom_settings' => FALSE,
@@ -323,6 +323,10 @@ function jj2015_site_strongarm() {
           'default' => array(
             'weight' => '0',
             'visible' => TRUE,
+          ),
+          'search_index' => array(
+            'weight' => '1',
+            'visible' => FALSE,
           ),
         ),
       ),

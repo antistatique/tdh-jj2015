@@ -29,7 +29,7 @@ function jj2015_session_strongarm() {
         'custom_settings' => FALSE,
       ),
       'search_index' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'search_result' => array(
         'custom_settings' => FALSE,
@@ -56,6 +56,10 @@ function jj2015_session_strongarm() {
       'display' => array(
         'language' => array(
           'default' => array(
+            'weight' => '1',
+            'visible' => FALSE,
+          ),
+          'search_index' => array(
             'weight' => '1',
             'visible' => FALSE,
           ),
@@ -110,7 +114,7 @@ function jj2015_session_strongarm() {
             'visible' => FALSE,
           ),
           'search_index' => array(
-            'weight' => '0',
+            'weight' => '4',
             'visible' => FALSE,
           ),
           'search_result' => array(
@@ -139,7 +143,7 @@ function jj2015_session_strongarm() {
         'custom_settings' => FALSE,
       ),
       'search_index' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'search_result' => array(
         'custom_settings' => FALSE,
@@ -175,6 +179,10 @@ function jj2015_session_strongarm() {
           ),
           'half_teaser_thumbnail' => array(
             'weight' => '0',
+            'visible' => FALSE,
+          ),
+          'search_index' => array(
+            'weight' => '7',
             'visible' => FALSE,
           ),
         ),
