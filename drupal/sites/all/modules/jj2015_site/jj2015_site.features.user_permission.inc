@@ -439,6 +439,7 @@ function jj2015_site_user_default_permissions() {
     'name' => 'administer site configuration',
     'roles' => array(
       'administrator' => 'administrator',
+      'translator' => 'translator',
     ),
     'module' => 'system',
   );
