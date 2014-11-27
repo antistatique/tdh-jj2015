@@ -10,7 +10,7 @@ jj2015.ch
 $ bundle
 $ npm install
 $ bower install
-$ gulp --production
+$ gulp
 ```
 
 ## First Installation (for reference)
