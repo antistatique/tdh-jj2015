@@ -13,7 +13,10 @@ function jj2015_session_user_default_permissions() {
   // Exported permission: 'create event_day content'.
   $permissions['create event_day content'] = array(
     'name' => 'create event_day content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
@@ -30,7 +33,10 @@ function jj2015_session_user_default_permissions() {
   // Exported permission: 'delete any event_day content'.
   $permissions['delete any event_day content'] = array(
     'name' => 'delete any event_day content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
@@ -47,7 +53,10 @@ function jj2015_session_user_default_permissions() {
   // Exported permission: 'delete own event_day content'.
   $permissions['delete own event_day content'] = array(
     'name' => 'delete own event_day content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
@@ -84,7 +93,10 @@ function jj2015_session_user_default_permissions() {
   // Exported permission: 'edit any event_day content'.
   $permissions['edit any event_day content'] = array(
     'name' => 'edit any event_day content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
@@ -101,7 +113,10 @@ function jj2015_session_user_default_permissions() {
   // Exported permission: 'edit own event_day content'.
   $permissions['edit own event_day content'] = array(
     'name' => 'edit own event_day content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
@@ -138,7 +153,9 @@ function jj2015_session_user_default_permissions() {
   // Exported permission: 'enter event_day revision log entry'.
   $permissions['enter event_day revision log entry'] = array(
     'name' => 'enter event_day revision log entry',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'override_node_options',
   );
 
@@ -154,42 +171,54 @@ function jj2015_session_user_default_permissions() {
   // Exported permission: 'override event_day authored by option'.
   $permissions['override event_day authored by option'] = array(
     'name' => 'override event_day authored by option',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'override_node_options',
   );
 
   // Exported permission: 'override event_day authored on option'.
   $permissions['override event_day authored on option'] = array(
     'name' => 'override event_day authored on option',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'override_node_options',
   );
 
   // Exported permission: 'override event_day promote to front page option'.
   $permissions['override event_day promote to front page option'] = array(
     'name' => 'override event_day promote to front page option',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'override_node_options',
   );
 
   // Exported permission: 'override event_day published option'.
   $permissions['override event_day published option'] = array(
     'name' => 'override event_day published option',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'override_node_options',
   );
 
   // Exported permission: 'override event_day revision option'.
   $permissions['override event_day revision option'] = array(
     'name' => 'override event_day revision option',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'override_node_options',
   );
 
   // Exported permission: 'override event_day sticky option'.
   $permissions['override event_day sticky option'] = array(
     'name' => 'override event_day sticky option',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'override_node_options',
   );
 
