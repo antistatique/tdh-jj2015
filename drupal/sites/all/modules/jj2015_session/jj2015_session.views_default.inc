@@ -73,6 +73,10 @@ function jj2015_session_views_default_views() {
   $handler->display->display_options['sorts']['field_session_day_tid']['id'] = 'field_session_day_tid';
   $handler->display->display_options['sorts']['field_session_day_tid']['table'] = 'field_data_field_session_day';
   $handler->display->display_options['sorts']['field_session_day_tid']['field'] = 'field_session_day_tid';
+  $handler->display->display_options['filter_groups']['groups'] = array(
+    1 => 'AND',
+    2 => 'OR',
+  );
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -88,6 +92,22 @@ function jj2015_session_views_default_views() {
     'event_day' => 'event_day',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Language */
+  $handler->display->display_options['filters']['language_1']['id'] = 'language_1';
+  $handler->display->display_options['filters']['language_1']['table'] = 'node';
+  $handler->display->display_options['filters']['language_1']['field'] = 'language';
+  $handler->display->display_options['filters']['language_1']['value'] = array(
+    'und' => 'und',
+  );
+  $handler->display->display_options['filters']['language_1']['group'] = 2;
+  /* Filter criterion: Content: Language */
+  $handler->display->display_options['filters']['language']['id'] = 'language';
+  $handler->display->display_options['filters']['language']['table'] = 'node';
+  $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['value'] = array(
+    '***CURRENT_LANGUAGE***' => '***CURRENT_LANGUAGE***',
+  );
+  $handler->display->display_options['filters']['language']['group'] = 2;
 
   /* Display: Block Sessions Days */
   $handler = $view->new_display('block', 'Block Sessions Days', 'block');
