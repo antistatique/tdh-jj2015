@@ -44,6 +44,10 @@ function jj2015_site_views_default_views() {
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  $handler->display->display_options['filter_groups']['groups'] = array(
+    1 => 'AND',
+    2 => 'OR',
+  );
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -58,6 +62,7 @@ function jj2015_site_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'page' => 'page',
   );
+  $handler->display->display_options['filters']['type']['group'] = 1;
   /* Filter criterion: Content: Featured (field_featured) */
   $handler->display->display_options['filters']['field_featured_value']['id'] = 'field_featured_value';
   $handler->display->display_options['filters']['field_featured_value']['table'] = 'field_data_field_featured';
@@ -65,6 +70,7 @@ function jj2015_site_views_default_views() {
   $handler->display->display_options['filters']['field_featured_value']['value'] = array(
     1 => '1',
   );
+  $handler->display->display_options['filters']['field_featured_value']['group'] = 1;
   $handler->display->display_options['filters']['field_featured_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_featured_value']['expose']['operator_id'] = 'field_featured_value_op';
   $handler->display->display_options['filters']['field_featured_value']['expose']['label'] = 'Featured (field_featured)';
@@ -82,6 +88,15 @@ function jj2015_site_views_default_views() {
   $handler->display->display_options['filters']['language']['value'] = array(
     '***CURRENT_LANGUAGE***' => '***CURRENT_LANGUAGE***',
   );
+  $handler->display->display_options['filters']['language']['group'] = 2;
+  /* Filter criterion: Content: Language */
+  $handler->display->display_options['filters']['language_1']['id'] = 'language_1';
+  $handler->display->display_options['filters']['language_1']['table'] = 'node';
+  $handler->display->display_options['filters']['language_1']['field'] = 'language';
+  $handler->display->display_options['filters']['language_1']['value'] = array(
+    'und' => 'und',
+  );
+  $handler->display->display_options['filters']['language_1']['group'] = 2;
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
