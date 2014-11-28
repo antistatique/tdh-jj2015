@@ -80,6 +80,7 @@
  * @ingroup themeable
  */
 hide($content['field_speakers']);
+hide($content['links']);
 hide($content['language']);
 if(!isset($readmore)) {
   unset($content['links']['node']['#links']['node-readmore']);
