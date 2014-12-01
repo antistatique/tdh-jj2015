@@ -237,10 +237,9 @@ function jj2015_session_strongarm() {
     3 => 'field_session_date',
     4 => 'field_session_day',
     5 => 'field_session_type',
-    6 => 'field_speakers',
-    7 => 'status',
-    8 => 'promote',
-    9 => 'sticky',
+    6 => 'status',
+    7 => 'promote',
+    8 => 'sticky',
   );
   $export['i18n_sync_node_type_session'] = $strongarm;
 

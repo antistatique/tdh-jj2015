@@ -629,13 +629,13 @@ function jj2015_session_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'entityreference',
+      'module' => 'options',
       'settings' => array(
         'match_operator' => 'CONTAINS',
         'path' => '',
         'size' => 60,
       ),
-      'type' => 'entityreference_autocomplete',
+      'type' => 'options_select',
       'weight' => 1,
     ),
   );
@@ -1087,7 +1087,7 @@ function jj2015_session_field_default_field_instances() {
     'fences_wrapper' => 'strong',
     'field_name' => 'field_main_language',
     'label' => 'Main Language',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -1378,7 +1378,7 @@ function jj2015_session_field_default_field_instances() {
     'fences_wrapper' => 'strong',
     'field_name' => 'field_session_date',
     'label' => 'Session Time',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'default_value' => 'now',
       'default_value2' => 'same',
@@ -1460,11 +1460,7 @@ function jj2015_session_field_default_field_instances() {
   // Exported field_instance: 'node-session-field_session_type'
   $field_instances['node-session-field_session_type'] = array(
     'bundle' => 'session',
-    'default_value' => array(
-      0 => array(
-        'tid' => 8,
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(

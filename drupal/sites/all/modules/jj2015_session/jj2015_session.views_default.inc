@@ -218,13 +218,17 @@ function jj2015_session_views_default_views() {
   $handler->display->display_options['relationships']['field_speakers_value']['field'] = 'field_speakers_value';
   $handler->display->display_options['relationships']['field_speakers_value']['required'] = TRUE;
   $handler->display->display_options['relationships']['field_speakers_value']['delta'] = '-1';
-  /* Relationship: Entity Reference: Referenced Entity */
-  $handler->display->display_options['relationships']['field_speaker_target_id']['id'] = 'field_speaker_target_id';
-  $handler->display->display_options['relationships']['field_speaker_target_id']['table'] = 'field_data_field_speaker';
-  $handler->display->display_options['relationships']['field_speaker_target_id']['field'] = 'field_speaker_target_id';
-  $handler->display->display_options['relationships']['field_speaker_target_id']['relationship'] = 'field_speakers_value';
-  $handler->display->display_options['relationships']['field_speaker_target_id']['required'] = TRUE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Field collection item: Speaker (field_speaker) */
+  $handler->display->display_options['arguments']['field_speaker_target_id']['id'] = 'field_speaker_target_id';
+  $handler->display->display_options['arguments']['field_speaker_target_id']['table'] = 'field_data_field_speaker';
+  $handler->display->display_options['arguments']['field_speaker_target_id']['field'] = 'field_speaker_target_id';
+  $handler->display->display_options['arguments']['field_speaker_target_id']['relationship'] = 'field_speakers_value';
+  $handler->display->display_options['arguments']['field_speaker_target_id']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_speaker_target_id']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['field_speaker_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_speaker_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_speaker_target_id']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['filter_groups']['groups'] = array(
     1 => 'AND',
@@ -310,7 +314,7 @@ function jj2015_session_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Speakers';
+  $handler->display->display_options['title'] = 'Intervenants';
   $handler->display->display_options['css_class'] = 'row';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
