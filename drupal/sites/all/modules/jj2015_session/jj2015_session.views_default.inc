@@ -143,12 +143,14 @@ function jj2015_session_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['group_type'] = 'count';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Sort criterion: Content: Session Day (field_session_day) */
+  $handler->display->display_options['sorts']['field_session_day_tid']['id'] = 'field_session_day_tid';
+  $handler->display->display_options['sorts']['field_session_day_tid']['table'] = 'field_data_field_session_day';
+  $handler->display->display_options['sorts']['field_session_day_tid']['field'] = 'field_session_day_tid';
+  /* Sort criterion: Content: Session Time -  start date (field_session_date) */
+  $handler->display->display_options['sorts']['field_session_date_value']['id'] = 'field_session_date_value';
+  $handler->display->display_options['sorts']['field_session_date_value']['table'] = 'field_data_field_session_date';
+  $handler->display->display_options['sorts']['field_session_date_value']['field'] = 'field_session_date_value';
   $handler->display->display_options['filter_groups']['groups'] = array(
     1 => 'AND',
     2 => 'OR',
