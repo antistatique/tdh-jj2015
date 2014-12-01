@@ -26,7 +26,7 @@ function jj2015_site_field_group_info() {
       0 => 'body',
       1 => 'field_featured',
       2 => 'field_image',
-      3 => 'title',
+      3 => 'title_field',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

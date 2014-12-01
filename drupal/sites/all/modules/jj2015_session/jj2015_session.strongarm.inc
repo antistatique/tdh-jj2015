@@ -88,7 +88,7 @@ function jj2015_session_strongarm() {
         'custom_settings' => TRUE,
       ),
       'search_result' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'half_teaser_thumbnail' => array(
         'custom_settings' => FALSE,
@@ -101,6 +101,15 @@ function jj2015_session_strongarm() {
       'form' => array(
         'title' => array(
           'weight' => '-5',
+        ),
+        'language' => array(
+          'weight' => '0',
+        ),
+        'metatags' => array(
+          'weight' => '7',
+        ),
+        'path' => array(
+          'weight' => '6',
         ),
       ),
       'display' => array(
@@ -166,6 +175,9 @@ function jj2015_session_strongarm() {
         'path' => array(
           'weight' => '3',
         ),
+        'metatags' => array(
+          'weight' => '40',
+        ),
       ),
       'display' => array(
         'language' => array(
@@ -194,6 +206,13 @@ function jj2015_session_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'i18n_node_extended_event_day';
+  $strongarm->value = '1';
+  $export['i18n_node_extended_event_day'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'i18n_node_extended_session';
   $strongarm->value = '1';
   $export['i18n_node_extended_session'] = $strongarm;
@@ -204,6 +223,13 @@ function jj2015_session_strongarm() {
   $strongarm->name = 'i18n_node_extended_speaker';
   $strongarm->value = '1';
   $export['i18n_node_extended_speaker'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'i18n_node_options_event_day';
+  $strongarm->value = array();
+  $export['i18n_node_options_event_day'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -230,62 +256,42 @@ function jj2015_session_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'i18n_sync_node_type_session';
-  $strongarm->value = array(
-    0 => 'field_featured',
-    1 => 'field_languages',
-    2 => 'field_main_language',
-    3 => 'field_session_date',
-    4 => 'field_session_day',
-    5 => 'field_session_type',
-    6 => 'status',
-    7 => 'promote',
-    8 => 'sticky',
-  );
+  $strongarm->value = array();
   $export['i18n_sync_node_type_session'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'i18n_sync_node_type_speaker';
-  $strongarm->value = array(
-    0 => 'field_email',
-    1 => 'field_featured',
-    2 => 'field_image',
-    3 => 'field_languages',
-    4 => 'status',
-    5 => 'promote',
-    6 => 'sticky',
-  );
+  $strongarm->value = array();
   $export['i18n_sync_node_type_speaker'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'language_content_type_event_day';
-  $strongarm->value = '2';
+  $strongarm->value = '4';
   $export['language_content_type_event_day'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'language_content_type_session';
-  $strongarm->value = '2';
+  $strongarm->value = '4';
   $export['language_content_type_session'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'language_content_type_speaker';
-  $strongarm->value = '2';
+  $strongarm->value = '4';
   $export['language_content_type_speaker'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_event_day';
-  $strongarm->value = array(
-    0 => 'menu-session-menu',
-  );
+  $strongarm->value = array();
   $export['menu_options_event_day'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -324,7 +330,7 @@ function jj2015_session_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_parent_speaker';
-  $strongarm->value = 'main-menu:643';
+  $strongarm->value = 'main-menu:0';
   $export['menu_parent_speaker'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -351,7 +357,6 @@ function jj2015_session_strongarm() {
   $strongarm->name = 'node_options_speaker';
   $strongarm->value = array(
     0 => 'status',
-    1 => 'promote',
   );
   $export['node_options_speaker'] = $strongarm;
 
@@ -394,7 +399,7 @@ function jj2015_session_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_speaker';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['node_submitted_speaker'] = $strongarm;
 
   return $export;

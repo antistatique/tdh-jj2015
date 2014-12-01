@@ -21,14 +21,13 @@ function jj2015_session_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Content',
-    'weight' => '0',
+    'weight' => '1',
     'children' => array(
       0 => 'body',
       1 => 'field_featured',
       2 => 'field_image',
       3 => 'field_youtube',
-      4 => 'field_name_title',
-      5 => 'title',
+      4 => 'title_field',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -144,7 +143,7 @@ function jj2015_session_field_group_info() {
     'children' => array(
       0 => 'body',
       1 => 'field_job_title',
-      2 => 'title',
+      2 => 'title_field',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -171,9 +170,9 @@ function jj2015_session_field_group_info() {
     'label' => 'File',
     'weight' => '1',
     'children' => array(
-      0 => 'field_resource_title',
-      1 => 'field_file',
-      2 => 'field_file_type',
+      0 => 'field_file',
+      1 => 'field_file_type',
+      2 => 'field_resource_title',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -200,9 +199,9 @@ function jj2015_session_field_group_info() {
     'label' => 'Infos',
     'weight' => '2',
     'children' => array(
-      0 => 'field_language',
-      1 => 'field_author',
-      2 => 'field_copyright',
+      0 => 'field_author',
+      1 => 'field_copyright',
+      2 => 'field_language',
       3 => 'field_year',
     ),
     'format_type' => 'tab',
@@ -228,13 +227,13 @@ function jj2015_session_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Infos',
-    'weight' => '2',
+    'weight' => '3',
     'children' => array(
       0 => 'field_languages',
-      1 => 'field_main_language',
-      2 => 'field_session_date',
-      3 => 'field_session_day',
-      4 => 'field_session_type',
+      1 => 'field_session_date',
+      2 => 'field_session_day',
+      3 => 'field_session_type',
+      4 => 'field_main_language',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -291,7 +290,7 @@ function jj2015_session_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Resources Links',
-    'weight' => '4',
+    'weight' => '5',
     'children' => array(
       0 => 'field_resources_links',
     ),
@@ -319,7 +318,7 @@ function jj2015_session_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Resources',
-    'weight' => '3',
+    'weight' => '4',
     'children' => array(
       0 => 'field_resources',
     ),
@@ -346,7 +345,7 @@ function jj2015_session_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Speakers',
-    'weight' => '1',
+    'weight' => '2',
     'children' => array(
       0 => 'field_speakers',
     ),

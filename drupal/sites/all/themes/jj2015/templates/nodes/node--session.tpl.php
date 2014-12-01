@@ -119,8 +119,10 @@ hide($content['links']);
     </div>
     <div class="row">
       <hr>
-      <?php print render($content['field_resources']); ?>
-      <?php print render($content['field_resources_links']); ?>
+      <div class="col-sm-12 resources">
+        <?php print render($content['field_resources']); ?>
+        <?php print render($content['field_resources_links']); ?>
+      </div>
     </div>
   </div>
 

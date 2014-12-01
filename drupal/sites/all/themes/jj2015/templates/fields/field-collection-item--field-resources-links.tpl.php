@@ -27,12 +27,17 @@
  * @see template_preprocess_entity()
  * @see template_process()
  */
-hide($content['field_file']);
-hide($content['field_file_type']);
 ?>
-<ul class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<?php if (isset($content['field_resource_title']) && isset($content['field_url'])): ?>
   <li class="content"<?php print $content_attributes; ?>>
     <p class="media-heading"><?php print render($content['field_resource_title']); ?> <small class="text-muted"><em><?php print t('By'); ?></em><?php print render($content['field_author']) ?> <?php print render($content['field_copyright']) ?> <?php print render($content['field_year']) ?></small> <small class="text-success"><?php print render($content['field_language']); ?></small> - <?php print render($content['field_url']); ?></p>
       <?php print render($content); ?>
   </li>
 </ul>
+<?php else: ?>
+  <ul class="media-list">
+    <li class="media">
+      <p class="text-muted"><?php print t('Aucune ressource.'); ?></p>
+    </li>
+  </ul>
+<?php endif; ?>

@@ -377,13 +377,7 @@ function jj2015_site_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'i18n_sync_node_type_page';
-  $strongarm->value = array(
-    0 => 'field_featured',
-    1 => 'field_is_event',
-    2 => 'status',
-    3 => 'promote',
-    4 => 'sticky',
-  );
+  $strongarm->value = array();
   $export['i18n_sync_node_type_page'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -397,7 +391,7 @@ function jj2015_site_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'language_content_type_page';
-  $strongarm->value = '2';
+  $strongarm->value = '4';
   $export['language_content_type_page'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -413,7 +407,7 @@ function jj2015_site_strongarm() {
   $strongarm->name = 'language_types';
   $strongarm->value = array(
     'language' => TRUE,
-    'language_content' => FALSE,
+    'language_content' => TRUE,
     'language_url' => FALSE,
   );
   $export['language_types'] = $strongarm;
@@ -424,7 +418,6 @@ function jj2015_site_strongarm() {
   $strongarm->name = 'menu_options_page';
   $strongarm->value = array(
     0 => 'main-menu',
-    1 => 'menu-session-menu',
   );
   $export['menu_options_page'] = $strongarm;
 

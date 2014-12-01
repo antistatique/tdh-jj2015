@@ -28,15 +28,19 @@
  * @see template_process()
  */
 hide($content['field_file']);
-hide($content['field_file_type']);
 ?>
-<div class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-  <div class="content"<?php print $content_attributes; ?>>
-    <span class="pull-left media-object glyphicon glyphicon-<?php print $content['field_file_type'][0]['#markup']; ?>"></span>
-    <div class="media-body pull-left">
-      <p class="media-heading"><?php print render($content['field_resource_title']); ?> <small class="text-muted"><?php if (isset($content['field_author'])): ?><em><?php print t('By'); ?></em><?php endif ?><?php print render($content['field_author']) ?> <?php print render($content['field_copyright']) ?> <?php print render($content['field_year']) ?></small></p>
-      <p><a href="<?php print $content['field_file'][0]['#markup']; ?>" class="btn btn-xs btn-primary">Download</a></strong> <small class="text-success"><?php print render($content['field_language']); ?></small></p>
-        <?php print render($content); ?>
+<?php if (isset($content['field_file']) && isset($content['field_file_type'])): ?>
+  <div class="<?php print $classes; ?> col-sm-12 clearfix"<?php print $attributes; ?>>
+    <div class="content"<?php print $content_attributes; ?>>
+      <?php hide($content['field_file_type']); ?>
+      <span class="pull-left media-object glyphicon glyphicon-<?php if (isset($content['field_file_type'][0])): print $content['field_file_type'][0]['#markup']; endif;?>"></span>
+      <div class="media-body pull-left">
+        <p class="media-heading"><?php print render($content['field_resource_title']); ?> <small class="text-muted"><?php if (isset($content['field_author'])): ?><em><?php print t('By'); ?></em><?php endif ?><?php print render($content['field_author']) ?> <?php print render($content['field_copyright']) ?> <?php print render($content['field_year']) ?></small></p>
+        <p><a href="<?php print $content['field_file'][0]['#markup']; ?>" class="btn btn-xs btn-primary">Download</a></strong> <small class="text-success"><?php print render($content['field_language']); ?></small></p>
+          <?php print render($content); ?>
+      </div>
     </div>
   </div>
-</div>
+<?php else: ?>
+  <p class="text-muted"><?php print t('Aucune ressource.'); ?></p>
+<?php endif; ?>
