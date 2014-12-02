@@ -567,7 +567,7 @@ function jj2015_session_field_default_field_bases() {
       ),
       'target_type' => 'node',
     ),
-    'translatable' => 1,
+    'translatable' => 0,
     'type' => 'entityreference',
   );
 
@@ -591,7 +591,7 @@ function jj2015_session_field_default_field_bases() {
       'hide_blank_items' => 1,
       'path' => '',
     ),
-    'translatable' => 1,
+    'translatable' => 0,
     'type' => 'field_collection',
   );
 
