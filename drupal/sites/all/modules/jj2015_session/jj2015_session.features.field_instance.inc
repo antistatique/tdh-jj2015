@@ -640,9 +640,13 @@ function jj2015_session_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
       'weight' => 1,
     ),
   );
@@ -1169,7 +1173,7 @@ function jj2015_session_field_default_field_instances() {
           'delete' => '',
           'description' => 0,
           'edit' => '',
-          'field_formatter_class' => '',
+          'field_formatter_class' => 'row',
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',

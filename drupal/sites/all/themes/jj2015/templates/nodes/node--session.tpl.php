@@ -86,6 +86,7 @@ hide($content['field_resources']);
 hide($content['field_resources_links']);
 hide($content['language']);
 hide($content['links']);
+hide($content['field_speakers']);
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
@@ -113,6 +114,9 @@ hide($content['links']);
         <div class="spacer spacer-xs"></div>
 
         <?php print render($content); ?>
+        <div class="row">
+          <?php print render($content['field_speakers']); ?>
+        </div>
 
         <?php print render($content['field_youtube']); ?>
       </article>
