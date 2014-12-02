@@ -76,6 +76,7 @@ function jj2015_session_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'translator' => 'translator',
     ),
     'module' => 'taxonomy',
   );
@@ -86,6 +87,7 @@ function jj2015_session_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'translator' => 'translator',
     ),
     'module' => 'taxonomy',
   );
@@ -136,6 +138,7 @@ function jj2015_session_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'translator' => 'translator',
     ),
     'module' => 'taxonomy',
   );
@@ -146,6 +149,7 @@ function jj2015_session_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'translator' => 'translator',
     ),
     'module' => 'taxonomy',
   );

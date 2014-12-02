@@ -246,6 +246,8 @@ function jj2015_site_user_default_permissions() {
     'name' => 'administer entity translation',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'translator' => 'translator',
     ),
     'module' => 'entity_translation',
   );
@@ -468,6 +470,7 @@ function jj2015_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'translator' => 'translator',
     ),
     'module' => 'taxonomy',
   );
@@ -550,7 +553,7 @@ function jj2015_site_user_default_permissions() {
     'name' => 'assign translator role',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
+      'translator' => 'translator',
     ),
     'module' => 'role_delegation',
   );
@@ -705,6 +708,7 @@ function jj2015_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'translator' => 'translator',
     ),
     'module' => 'taxonomy',
   );
@@ -772,6 +776,7 @@ function jj2015_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'translator' => 'translator',
     ),
     'module' => 'taxonomy',
   );
@@ -1028,6 +1033,8 @@ function jj2015_site_user_default_permissions() {
     'name' => 'toggle field translatability',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'translator' => 'translator',
     ),
     'module' => 'entity_translation',
   );
@@ -1047,6 +1054,8 @@ function jj2015_site_user_default_permissions() {
     'name' => 'translate any entity',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'translator' => 'translator',
     ),
     'module' => 'entity_translation',
   );
@@ -1077,6 +1086,8 @@ function jj2015_site_user_default_permissions() {
     'name' => 'translate node entities',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'translator' => 'translator',
     ),
     'module' => 'entity_translation',
   );
@@ -1084,7 +1095,11 @@ function jj2015_site_user_default_permissions() {
   // Exported permission: 'translate taxonomy_term entities'.
   $permissions['translate taxonomy_term entities'] = array(
     'name' => 'translate taxonomy_term entities',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'translator' => 'translator',
+    ),
     'module' => 'entity_translation',
   );
 
