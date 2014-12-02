@@ -106,10 +106,10 @@ function jj2015_session_strongarm() {
           'weight' => '0',
         ),
         'metatags' => array(
-          'weight' => '7',
+          'weight' => '8',
         ),
         'path' => array(
-          'weight' => '6',
+          'weight' => '7',
         ),
       ),
       'display' => array(

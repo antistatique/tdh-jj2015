@@ -552,21 +552,17 @@ function jj2015_session_field_default_field_bases() {
     'module' => 'entityreference',
     'settings' => array(
       'entity_translation_sync' => FALSE,
-      'handler' => 'translated_entityreference',
+      'handler' => 'views',
       'handler_settings' => array(
         'behaviors' => array(
           'views-select-list' => array(
             'status' => 0,
           ),
         ),
-        'filter' => array(
-          'language' => 0,
-        ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'speaker' => 'speaker',
+        'view' => array(
+          'args' => array(),
+          'display_name' => 'entityreference_1',
+          'view_name' => 'speakers',
         ),
       ),
       'target_type' => 'node',
