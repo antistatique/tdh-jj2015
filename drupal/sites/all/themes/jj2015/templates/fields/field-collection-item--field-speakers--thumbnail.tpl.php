@@ -29,10 +29,5 @@
  */
 $field_speaker = $content['field_speaker']['#items'][0]['entity'];
 ?>
-<!-- markup begins in node--speaker--half.... -->
     <?php print render($content['field_speaker']); ?>
     <?php print render($content['field_description']); ?>
-    </div>
-  </div>
-
-</div>

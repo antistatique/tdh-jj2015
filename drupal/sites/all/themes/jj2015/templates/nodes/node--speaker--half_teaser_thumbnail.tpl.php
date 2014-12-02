@@ -98,6 +98,9 @@ if(!isset($readmore)) {
 
     <div class="content"<?php print $content_attributes; ?>>
       <?php print render($content); ?>
-      <!-- intentionnaly not closed here -> field-collection-item--field-speakers-thumbnail.tpl.php -->
+    </div>
+  </div>
+
+</div>
 
 
