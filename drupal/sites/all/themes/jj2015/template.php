@@ -145,3 +145,14 @@ function jj2015_query_node_access_alter(QueryAlterableInterface $query) {
     $query->condition($db_and);
   }
 }
+
+/**
+ * Variable preprocessor for the views exposed forms.
+ *
+ * @see jj2015_form_views_exposed_form_alter()
+ */
+function jj2015_preprocess_views_exposed_form(&$variables) {
+  // this should target a specific form to avoid issues if there are several
+  $form = &$variables['form'];
+  $variables['button'] = '<button class="btn btn-default" id="edit-submit-search" name="" value="Search" type="submit">'.t('Search').'</button>';
+}

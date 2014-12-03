@@ -66,9 +66,9 @@ function jj2015_site_context_default_contexts() {
           'region' => 'sub_nav',
           'weight' => '-10',
         ),
-        'search-form' => array(
-          'module' => 'search',
-          'delta' => 'form',
+        'views--exp-search-page' => array(
+          'module' => 'views',
+          'delta' => '-exp-search-page',
           'region' => 'search',
           'weight' => '-10',
         ),

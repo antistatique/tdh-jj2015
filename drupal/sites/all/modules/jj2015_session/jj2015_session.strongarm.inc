@@ -37,6 +37,9 @@ function jj2015_session_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'searchapi_result' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -98,6 +101,9 @@ function jj2015_session_strongarm() {
       ),
       'diff_standard' => array(
         'custom_settings' => FALSE,
+      ),
+      'searchapi_result' => array(
+        'custom_settings' => TRUE,
       ),
     ),
     'extra_fields' => array(
@@ -165,6 +171,9 @@ function jj2015_session_strongarm() {
       ),
       'token' => array(
         'custom_settings' => FALSE,
+      ),
+      'searchapi_result' => array(
+        'custom_settings' => TRUE,
       ),
     ),
     'extra_fields' => array(

@@ -262,6 +262,14 @@ function jj2015_site_strongarm() {
       0 => 'i18n_translation_set',
       1 => 'tsid',
     ),
+    'search_api_server' => array(
+      0 => 'search_api_server',
+      1 => 'id',
+    ),
+    'search_api_index' => array(
+      0 => 'search_api_index',
+      1 => 'id',
+    ),
     'file' => array(
       0 => 'file_managed',
       1 => 'fid',
@@ -492,6 +500,10 @@ function jj2015_site_strongarm() {
         'label' => 'Half Teaser Thumbnail',
         'custom settings' => 1,
       ),
+      'searchapi_result' => array(
+        'label' => 'Search Result',
+        'custom settings' => 1,
+      ),
     ),
   );
   $export['entity_view_modes'] = $strongarm;
@@ -615,6 +627,9 @@ function jj2015_site_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'searchapi_result' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -640,6 +655,10 @@ function jj2015_site_strongarm() {
           'search_index' => array(
             'weight' => '1',
             'visible' => FALSE,
+          ),
+          'searchapi_result' => array(
+            'weight' => '0',
+            'visible' => TRUE,
           ),
         ),
       ),
