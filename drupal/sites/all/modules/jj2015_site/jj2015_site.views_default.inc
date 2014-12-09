@@ -121,40 +121,38 @@ function jj2015_site_views_default_views() {
   $handler->display->display_options['fields']['search_api_et_id']['id'] = 'search_api_et_id';
   $handler->display->display_options['fields']['search_api_et_id']['table'] = 'search_api_index_default_multilingual_node_index';
   $handler->display->display_options['fields']['search_api_et_id']['field'] = 'search_api_et_id';
+  /* Sort criterion: Search: Relevance */
+  $handler->display->display_options['sorts']['search_api_relevance']['id'] = 'search_api_relevance';
+  $handler->display->display_options['sorts']['search_api_relevance']['table'] = 'search_api_index_default_multilingual_node_index';
+  $handler->display->display_options['sorts']['search_api_relevance']['field'] = 'search_api_relevance';
+  $handler->display->display_options['sorts']['search_api_relevance']['order'] = 'DESC';
   /* Filter criterion: Search: Fulltext search */
   $handler->display->display_options['filters']['search_api_views_fulltext']['id'] = 'search_api_views_fulltext';
   $handler->display->display_options['filters']['search_api_views_fulltext']['table'] = 'search_api_index_default_multilingual_node_index';
   $handler->display->display_options['filters']['search_api_views_fulltext']['field'] = 'search_api_views_fulltext';
+  $handler->display->display_options['filters']['search_api_views_fulltext']['group'] = 1;
   $handler->display->display_options['filters']['search_api_views_fulltext']['exposed'] = TRUE;
   $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['operator_id'] = 'search_api_views_fulltext_op';
-  $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['label'] = 'Fulltext search';
   $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['operator'] = 'search_api_views_fulltext_op';
-  $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['identifier'] = 'search_api_views_fulltext';
+  $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['identifier'] = 's';
+  $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['required'] = TRUE;
+  $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['remember'] = TRUE;
   $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['remember_roles'] = array(
     2 => '2',
-    1 => 0,
+    1 => '1',
     3 => 0,
     4 => 0,
     5 => 0,
   );
-  $handler->display->display_options['filters']['search_api_views_fulltext']['fields'] = array(
-    'body:summary' => 'body:summary',
-    'body:value' => 'body:value',
-    'field_email' => 'field_email',
-    'field_job_title' => 'field_job_title',
-    'field_resources:field_author' => 'field_resources:field_author',
-    'field_resources:field_copyright' => 'field_resources:field_copyright',
-    'field_resources:field_description' => 'field_resources:field_description',
-    'field_resources:field_resource_title' => 'field_resources:field_resource_title',
-    'field_resources_links:field_author' => 'field_resources_links:field_author',
-    'field_resources_links:field_description' => 'field_resources_links:field_description',
-    'field_resources_links:field_resource_title' => 'field_resources_links:field_resource_title',
-    'field_speakers:field_speaker:field_email' => 'field_speakers:field_speaker:field_email',
-    'field_speakers:field_speaker:field_job_title' => 'field_speakers:field_speaker:field_job_title',
-    'field_speakers:field_speaker:title' => 'field_speakers:field_speaker:title',
-    'title' => 'title',
-    'title_field' => 'title_field',
+  /* Filter criterion: Indexed Multilingual Node: Item language */
+  $handler->display->display_options['filters']['search_api_language']['id'] = 'search_api_language';
+  $handler->display->display_options['filters']['search_api_language']['table'] = 'search_api_index_default_multilingual_node_index';
+  $handler->display->display_options['filters']['search_api_language']['field'] = 'search_api_language';
+  $handler->display->display_options['filters']['search_api_language']['value'] = array(
+    'current' => 'current',
+    'und' => 'und',
   );
+  $handler->display->display_options['filters']['search_api_language']['group'] = 1;
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');

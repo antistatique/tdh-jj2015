@@ -117,21 +117,31 @@ function jj2015_site_default_search_api_index() {
       "search_api_et" : { "include" : "all", "fallback language" : "fr" },
       "data_alter_callbacks" : {
         "search_api_alter_bundle_filter" : {
-          "status" : 0,
-          "weight" : "-10",
+          "status" : 1,
+          "weight" : "-50",
           "settings" : { "default" : "1", "bundles" : [] }
         },
-        "search_api_alter_node_access" : { "status" : 1, "weight" : "0", "settings" : [] },
-        "search_api_alter_node_status" : { "status" : 1, "weight" : "0", "settings" : [] },
+        "search_api_alter_node_status" : { "status" : 1, "weight" : "-49", "settings" : [] },
+        "search_api_alter_node_access" : { "status" : 0, "weight" : "-48", "settings" : [] },
+        "search_api_attachments_alter_settings" : {
+          "status" : 1,
+          "weight" : "-47",
+          "settings" : { "excluded_extensions" : "aif art avi bmp gif ico mov oga ogv png psd ra ram rgb flv" }
+        },
+        "search_api_attachments_field_collections_alter_settings" : {
+          "status" : 1,
+          "weight" : "-46",
+          "settings" : { "excluded_extensions" : "aif art avi bmp gif ico mov oga ogv png psd ra ram rgb flv" }
+        },
+        "search_api_alter_add_hierarchy" : { "status" : 0, "weight" : "-45", "settings" : { "fields" : [] } },
+        "search_api_alter_add_url" : { "status" : 0, "weight" : "-44", "settings" : [] },
+        "search_api_alter_add_aggregation" : { "status" : 0, "weight" : "-43", "settings" : [] },
+        "search_api_alter_add_viewed_entity" : { "status" : 0, "weight" : "-42", "settings" : { "mode" : "full" } },
         "search_api_alter_language_control" : {
           "status" : 0,
-          "weight" : "0",
+          "weight" : "-41",
           "settings" : { "lang_field" : "", "languages" : [] }
-        },
-        "search_api_alter_add_viewed_entity" : { "status" : 0, "weight" : "0", "settings" : { "mode" : "full" } },
-        "search_api_alter_add_url" : { "status" : 0, "weight" : "0", "settings" : [] },
-        "search_api_alter_add_aggregation" : { "status" : 0, "weight" : "0", "settings" : [] },
-        "search_api_alter_add_hierarchy" : { "status" : 0, "weight" : "0", "settings" : { "fields" : [] } }
+        }
       },
       "processors" : {
         "search_api_case_ignore" : {
@@ -250,6 +260,7 @@ function jj2015_site_default_search_api_index() {
         }
       },
       "fields" : {
+        "attachments_field_file" : { "type" : "text" },
         "author" : { "type" : "integer", "entity_type" : "user" },
         "body:summary" : { "type" : "text" },
         "body:value" : { "type" : "text" },
@@ -259,6 +270,7 @@ function jj2015_site_default_search_api_index() {
         "field_job_title" : { "type" : "text" },
         "field_languages" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "field_main_language" : { "type" : "integer", "entity_type" : "taxonomy_term" },
+        "field_metatags" : { "type" : "text" },
         "field_resources" : {
           "type" : "list\\u003Cinteger\\u003E",
           "entity_type" : "field_collection_item"
@@ -266,9 +278,11 @@ function jj2015_site_default_search_api_index() {
         "field_resources:field_author" : { "type" : "list\\u003Ctext\\u003E" },
         "field_resources:field_copyright" : { "type" : "list\\u003Ctext\\u003E" },
         "field_resources:field_description" : { "type" : "list\\u003Ctext\\u003E" },
+        "field_resources:field_file:file" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "file" },
+        "field_resources:field_file:file:name" : { "type" : "list\\u003Ctext\\u003E", "boost" : "3.0" },
         "field_resources:field_file_type" : { "type" : "list\\u003Cstring\\u003E" },
-        "field_resources:field_name" : { "type" : "list\\u003Cstring\\u003E" },
-        "field_resources:field_resource_title" : { "type" : "list\\u003Ctext\\u003E" },
+        "field_resources:field_name" : { "type" : "list\\u003Ctext\\u003E" },
+        "field_resources:field_resource_title" : { "type" : "list\\u003Ctext\\u003E", "boost" : "5.0" },
         "field_resources:field_year" : { "type" : "list\\u003Cdate\\u003E" },
         "field_resources_links" : {
           "type" : "list\\u003Cinteger\\u003E",
@@ -276,9 +290,10 @@ function jj2015_site_default_search_api_index() {
         },
         "field_resources_links:field_author" : { "type" : "list\\u003Ctext\\u003E" },
         "field_resources_links:field_description" : { "type" : "list\\u003Ctext\\u003E" },
+        "field_resources_links:field_file:file" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "file" },
         "field_resources_links:field_language" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "field_resources_links:field_name" : { "type" : "list\\u003Cstring\\u003E" },
-        "field_resources_links:field_resource_title" : { "type" : "list\\u003Ctext\\u003E" },
+        "field_resources_links:field_resource_title" : { "type" : "list\\u003Ctext\\u003E", "boost" : "3.0" },
         "field_session_day" : { "type" : "integer", "entity_type" : "taxonomy_term" },
         "field_session_type" : { "type" : "integer", "entity_type" : "taxonomy_term" },
         "field_speakers" : {
@@ -447,7 +462,7 @@ function jj2015_site_default_search_api_server() {
           "field_resources_links:field_resource_title" : {
             "table" : "search_api_db_default_multilingual_node_index_text",
             "type" : "list\\u003Ctext\\u003E",
-            "boost" : "1.0"
+            "boost" : "3.0"
           },
           "field_resources_links:field_description" : {
             "table" : "search_api_db_default_multilingual_node_index_text",
@@ -455,9 +470,9 @@ function jj2015_site_default_search_api_server() {
             "boost" : "1.0"
           },
           "field_resources:field_name" : {
-            "table" : "search_api_db_default_multilingual_node_index_field_resource_2",
+            "table" : "search_api_db_default_multilingual_node_index_text",
             "column" : "value",
-            "type" : "list\\u003Cstring\\u003E",
+            "type" : "list\\u003Ctext\\u003E",
             "boost" : "1.0"
           },
           "field_resources:field_author" : {
@@ -473,7 +488,7 @@ function jj2015_site_default_search_api_server() {
           "field_resources:field_resource_title" : {
             "table" : "search_api_db_default_multilingual_node_index_text",
             "type" : "list\\u003Ctext\\u003E",
-            "boost" : "1.0"
+            "boost" : "5.0"
           },
           "field_resources:field_year" : {
             "table" : "search_api_db_default_multilingual_node_index_field_resource_4",
@@ -523,6 +538,33 @@ function jj2015_site_default_search_api_server() {
           "field_speakers:field_speaker:field_job_title" : {
             "table" : "search_api_db_default_multilingual_node_index_text",
             "type" : "list\\u003Ctext\\u003E",
+            "boost" : "1.0"
+          },
+          "field_resources_links:field_file:file" : {
+            "table" : "search_api_db_default_multilingual_node_index_field_resource_6",
+            "column" : "value",
+            "type" : "list\\u003Cinteger\\u003E",
+            "boost" : "1.0"
+          },
+          "field_resources:field_file:file" : {
+            "table" : "search_api_db_default_multilingual_node_index_field_resource_7",
+            "column" : "value",
+            "type" : "list\\u003Cinteger\\u003E",
+            "boost" : "1.0"
+          },
+          "field_resources:field_file:file:name" : {
+            "table" : "search_api_db_default_multilingual_node_index_text",
+            "type" : "list\\u003Ctext\\u003E",
+            "boost" : "3.0"
+          },
+          "attachments_field_file" : {
+            "table" : "search_api_db_default_multilingual_node_index_text",
+            "type" : "text",
+            "boost" : "1.0"
+          },
+          "field_metatags" : {
+            "table" : "search_api_db_default_multilingual_node_index_text",
+            "type" : "text",
             "boost" : "1.0"
           }
         }

@@ -82,7 +82,7 @@ function jj2015_session_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'meta',
-    'weight' => '2',
+    'weight' => '1',
     'children' => array(
       0 => 'field_session_date',
       1 => 'field_session_type',
@@ -234,6 +234,7 @@ function jj2015_session_field_group_info() {
       2 => 'field_session_day',
       3 => 'field_session_type',
       4 => 'field_main_language',
+      5 => 'field_metatags',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

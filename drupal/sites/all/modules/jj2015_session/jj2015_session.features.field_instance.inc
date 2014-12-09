@@ -986,7 +986,7 @@ function jj2015_session_field_default_field_instances() {
           'field_formatter_class' => '',
         ),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 2,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -1083,7 +1083,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 11,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -1138,7 +1138,7 @@ function jj2015_session_field_default_field_instances() {
           'image_style' => 'banner',
         ),
         'type' => 'image',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -1155,7 +1155,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'search_result' => array(
         'label' => 'hidden',
@@ -1248,7 +1248,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 12,
+        'weight' => 13,
       ),
       'search_result' => array(
         'label' => 'hidden',
@@ -1310,7 +1310,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -1352,6 +1352,68 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-session-field_metatags'
+  $field_instances['node-session-field_metatags'] = array(
+    'bundle' => 'session',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Insérez ici tous les mots clés qui doivent être indexés par le moteur de recherche local. Le contenu standard de la session est déjà indexé, uniquement les titres des fichiers ne le sont pas de base.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
+      ),
+      'search_index' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
+        'type' => 'text_plain',
+        'weight' => 6,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'searchapi_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_metatags',
+    'label' => 'Search index',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 18,
+    ),
+  );
+
   // Exported field_instance: 'node-session-field_resources'
   $field_instances['node-session-field_resources'] = array(
     'bundle' => 'session',
@@ -1371,7 +1433,7 @@ function jj2015_session_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'full' => array(
         'label' => 'above',
@@ -1461,7 +1523,7 @@ function jj2015_session_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 7,
+        'weight' => 6,
       ),
       'full' => array(
         'label' => 'above',
@@ -1566,7 +1628,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 11,
+        'weight' => 12,
       ),
       'search_result' => array(
         'label' => 'hidden',
@@ -1656,7 +1718,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 10,
       ),
       'search_result' => array(
         'label' => 'hidden',
@@ -1790,7 +1852,7 @@ function jj2015_session_field_default_field_instances() {
           'view_mode' => 'thumbnail',
         ),
         'type' => 'field_collection_view',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'search_index' => array(
         'label' => 'hidden',
@@ -1873,7 +1935,7 @@ function jj2015_session_field_default_field_instances() {
           'youtube_width' => '',
         ),
         'type' => 'youtube_video',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -1896,7 +1958,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'search_result' => array(
         'label' => 'hidden',
@@ -2723,6 +2785,7 @@ function jj2015_session_field_default_field_instances() {
   t('File');
   t('File Type');
   t('Image');
+  t('Insérez ici tous les mots clés qui doivent être indexés par le moteur de recherche local. Le contenu standard de la session est déjà indexé, uniquement les titres des fichiers ne le sont pas de base.');
   t('Job Title');
   t('L\'horaire de la session.');
   t('Language');
@@ -2732,6 +2795,7 @@ function jj2015_session_field_default_field_instances() {
   t('Main Language');
   t('Resources');
   t('Resources Links');
+  t('Search index');
   t('Session Day');
   t('Session Time');
   t('Session Type');
