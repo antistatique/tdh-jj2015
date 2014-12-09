@@ -234,7 +234,6 @@ function jj2015_session_field_group_info() {
       2 => 'field_session_day',
       3 => 'field_session_type',
       4 => 'field_main_language',
-      5 => 'field_metatags',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -322,6 +321,7 @@ function jj2015_session_field_group_info() {
     'weight' => '5',
     'children' => array(
       0 => 'field_resources',
+      1 => 'field_metatags',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

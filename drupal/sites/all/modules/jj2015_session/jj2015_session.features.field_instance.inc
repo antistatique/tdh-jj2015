@@ -1357,7 +1357,7 @@ function jj2015_session_field_default_field_instances() {
     'bundle' => 'session',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Insérez ici tous les mots clés qui doivent être indexés par le moteur de recherche local. Le contenu standard de la session est déjà indexé, uniquement les titres des fichiers ne le sont pas de base.',
+    'description' => 'Insérez ici tous les mots clés qui doivent être indexés par le moteur de recherche local. Le contenu standard de la session est déjà indexé, uniquement les titres des fichiers et tout ce qui se trouve dans cet onglet "Ressources" ne le sont pas de base.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1410,7 +1410,7 @@ function jj2015_session_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 18,
+      'weight' => 11,
     ),
   );
 
@@ -2785,7 +2785,7 @@ function jj2015_session_field_default_field_instances() {
   t('File');
   t('File Type');
   t('Image');
-  t('Insérez ici tous les mots clés qui doivent être indexés par le moteur de recherche local. Le contenu standard de la session est déjà indexé, uniquement les titres des fichiers ne le sont pas de base.');
+  t('Insérez ici tous les mots clés qui doivent être indexés par le moteur de recherche local. Le contenu standard de la session est déjà indexé, uniquement les titres des fichiers et tout ce qui se trouve dans cet onglet "Ressources" ne le sont pas de base.');
   t('Job Title');
   t('L\'horaire de la session.');
   t('Language');
