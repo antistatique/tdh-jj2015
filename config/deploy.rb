@@ -5,7 +5,7 @@ load 'config/recipes.rb'
 
 # Relative path to thedrupal path
 set :app_path,        "drupal"
-set :shared_children, ['drupal/sites/default/files','private-files']
+set :shared_children, ['drupal/sites/default/files','drupal/private-files']
 set :shared_files,    ['drupal/sites/default/settings.php']
 set :stages,          %w(staging prod)
 
