@@ -1414,6 +1414,64 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-session-field_name_title'
+  $field_instances['node-session-field_name_title'] = array(
+    'bundle' => 'session',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
+      ),
+      'search_index' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
+      ),
+      'searchapi_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 8,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_name_title',
+    'label' => 'Session Name',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => -4,
+    ),
+  );
+
   // Exported field_instance: 'node-session-field_resources'
   $field_instances['node-session-field_resources'] = array(
     'bundle' => 'session',
@@ -2797,6 +2855,7 @@ function jj2015_session_field_default_field_instances() {
   t('Resources Links');
   t('Search index');
   t('Session Day');
+  t('Session Name');
   t('Session Time');
   t('Session Type');
   t('Si coché, la sesion sera mise en avant sur la page d\'accueil.');

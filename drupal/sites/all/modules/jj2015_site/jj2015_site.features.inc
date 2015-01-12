@@ -260,7 +260,6 @@ function jj2015_site_default_search_api_index() {
         }
       },
       "fields" : {
-        "attachments_field_file" : { "type" : "text" },
         "author" : { "type" : "integer", "entity_type" : "user" },
         "body:summary" : { "type" : "text" },
         "body:value" : { "type" : "text" },
@@ -556,11 +555,6 @@ function jj2015_site_default_search_api_server() {
             "table" : "search_api_db_default_multilingual_node_index_text",
             "type" : "list\\u003Ctext\\u003E",
             "boost" : "3.0"
-          },
-          "attachments_field_file" : {
-            "table" : "search_api_db_default_multilingual_node_index_text",
-            "type" : "text",
-            "boost" : "1.0"
           },
           "field_metatags" : {
             "table" : "search_api_db_default_multilingual_node_index_text",
