@@ -28,11 +28,20 @@ role :app,           domain
 role :db,            domain
 
 set  :keep_releases,   3
-after "deploy:update", "deploy:cleanup"
+
+namespace :hotfix do
+  task :fix_permissions do
+    count = fetch(:keep_releases, 5).to_i
+    run("ls -1dt #{releases_path}/* | tail -n +#{count + 1} | xargs chmod -R 777")
+  end
+end
 
 after "deploy:update_code", "styleguide:update"
 after "deploy:update_code", "styleguide:build"
 after "deploy:update_code", "styleguide:copy_build"
+
+after "deploy:update", "deploy:cleanup"
+before "deploy:cleanup", "hotfix:fix_permissions"
 
 # Be more verbose by uncommenting the following line
 #logger.level = Logger::MAX_LEVEL

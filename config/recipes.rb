@@ -23,6 +23,6 @@ namespace :styleguide do
 
   desc "copy assets into drupal"
   task :copy_build do
-    run "cp -r #{shared_path}/styleguide/build #{latest_release}/drupal/sites/all/themes/jj2015/build"
+    run "cp -r #{shared_path}/styleguide/build/ #{latest_release}/drupal/sites/all/themes/jj2015/"
   end
 end
