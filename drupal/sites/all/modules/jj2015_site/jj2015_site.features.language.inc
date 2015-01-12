@@ -16,7 +16,7 @@ function jj2015_site_locale_default_languages() {
     'name' => 'DE',
     'native' => 'DE',
     'direction' => 0,
-    'enabled' => 1,
+    'enabled' => 0,
     'plurals' => 2,
     'formula' => '($n!=1)',
     'domain' => '',
