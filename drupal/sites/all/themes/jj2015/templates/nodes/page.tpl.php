@@ -194,9 +194,7 @@
         <?php print render($page['footer_2']); ?>
       </div>
       <div class="col-sm-4">
-        <div class="well">
           <?php print render($page['footer_3']); ?>
-        </div>
       </div>
     </div>
     <?php print render($page['footer']); ?>
