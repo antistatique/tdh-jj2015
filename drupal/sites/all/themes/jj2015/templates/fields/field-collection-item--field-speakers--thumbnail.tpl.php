@@ -26,8 +26,10 @@
  * @see template_preprocess()
  * @see template_preprocess_entity()
  * @see template_process()
- */
-$field_speaker = $content['field_speaker']['#items'][0]['entity'];
-?>
-    <?php print render($content['field_speaker']); ?>
-    <?php print render($content['field_description']); ?>
+ */ ?>
+
+<?php if (isset($content['field_speaker'])): ?>
+  <?php $field_speaker = $content['field_speaker']['#items'][0]['entity']; ?>
+  <?php print render($content['field_speaker']); ?>
+  <?php print render($content['field_description']); ?>
+<?php endif ?>
