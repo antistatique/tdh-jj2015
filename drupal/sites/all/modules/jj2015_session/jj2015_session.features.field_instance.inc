@@ -453,11 +453,11 @@ function jj2015_session_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'i18n_taxonomy',
+        'module' => 'taxonomy',
         'settings' => array(
           'field_formatter_class' => '',
         ),
-        'type' => 'i18n_taxonomy_term_reference_plain',
+        'type' => 'taxonomy_term_reference_link',
         'weight' => 2,
       ),
       'full' => array(
@@ -1228,20 +1228,20 @@ function jj2015_session_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'i18n_taxonomy',
+        'module' => 'taxonomy',
         'settings' => array(
           'field_formatter_class' => '',
         ),
-        'type' => 'i18n_taxonomy_term_reference_plain',
+        'type' => 'taxonomy_term_reference_link',
         'weight' => 17,
       ),
       'full' => array(
         'label' => 'hidden',
-        'module' => 'i18n_taxonomy',
+        'module' => 'taxonomy',
         'settings' => array(
           'field_formatter_class' => '',
         ),
-        'type' => 'i18n_taxonomy_term_reference_plain',
+        'type' => 'taxonomy_term_reference_link',
         'weight' => 6,
       ),
       'search_index' => array(
@@ -1829,20 +1829,20 @@ function jj2015_session_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'i18n_taxonomy',
+        'module' => 'taxonomy',
         'settings' => array(
           'field_formatter_class' => '',
         ),
-        'type' => 'i18n_taxonomy_term_reference_plain',
+        'type' => 'taxonomy_term_reference_link',
         'weight' => 12,
       ),
       'full' => array(
         'label' => 'hidden',
-        'module' => 'i18n_taxonomy',
+        'module' => 'taxonomy',
         'settings' => array(
           'field_formatter_class' => '',
         ),
-        'type' => 'i18n_taxonomy_term_reference_plain',
+        'type' => 'taxonomy_term_reference_link',
         'weight' => 4,
       ),
       'search_index' => array(
@@ -2999,6 +2999,43 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-session_types-name_field'
+  $field_instances['taxonomy_term-session_types-name_field'] = array(
+    'bundle' => 'session_types',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'name_field',
+    'label' => 'Name',
+    'required' => TRUE,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'hide_label' => array(
+        'entity' => FALSE,
+        'page' => FALSE,
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => -5,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Author');
@@ -3025,6 +3062,7 @@ function jj2015_session_field_default_field_instances() {
   t('Les langues que parle le/la speaker (durant la conférence uniquement).');
   t('Main Language');
   t('Mr, Ms, Mrs, Dr., etc...');
+  t('Name');
   t('Resources');
   t('Resources Links');
   t('Search index');
