@@ -2148,7 +2148,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 4,
+        'weight' => 7,
       ),
       'search_index' => array(
         'label' => 'hidden',
@@ -2157,19 +2157,19 @@ function jj2015_session_field_default_field_instances() {
           'field_formatter_class' => '',
         ),
         'type' => 'text_plain',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'searchapi_result' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 8,
       ),
     ),
     'entity_type' => 'node',
@@ -2189,7 +2189,7 @@ function jj2015_session_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => -3,
+      'weight' => 56,
     ),
   );
 
@@ -2213,7 +2213,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 8,
       ),
       'search_index' => array(
         'label' => 'hidden',
@@ -2222,13 +2222,13 @@ function jj2015_session_field_default_field_instances() {
           'field_formatter_class' => '',
         ),
         'type' => 'email_default',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'searchapi_result' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2277,25 +2277,25 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 11,
       ),
       'search_index' => array(
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 11,
       ),
       'searchapi_result' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 6,
       ),
     ),
     'entity_type' => 'node',
@@ -2336,7 +2336,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 10,
       ),
       'search_index' => array(
         'label' => 'hidden',
@@ -2345,13 +2345,13 @@ function jj2015_session_field_default_field_instances() {
           'field_formatter_class' => '',
         ),
         'type' => 'file_url_plain',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'searchapi_result' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2380,6 +2380,80 @@ function jj2015_session_field_default_field_instances() {
       ),
       'type' => 'file_generic',
       'weight' => 11,
+    ),
+  );
+
+  // Exported field_instance: 'node-speaker-field_first_name'
+  $field_instances['node-speaker-field_first_name'] = array(
+    'bundle' => 'speaker',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
+        'type' => 'text_default',
+        'weight' => 14,
+      ),
+      'half_teaser_thumbnail' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
+        'type' => 'text_plain',
+        'weight' => 5,
+      ),
+      'search_index' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
+        'type' => 'text_plain',
+        'weight' => 9,
+      ),
+      'searchapi_result' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
+        'type' => 'text_plain',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
+        'type' => 'text_plain',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'span',
+    'field_name' => 'field_first_name',
+    'label' => 'First Name',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 53,
     ),
   );
 
@@ -2415,7 +2489,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 9,
       ),
       'searchapi_result' => array(
         'label' => 'hidden',
@@ -2426,7 +2500,7 @@ function jj2015_session_field_default_field_instances() {
           'image_style' => 'thumbnail',
         ),
         'type' => 'image',
-        'weight' => 0,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -2437,7 +2511,7 @@ function jj2015_session_field_default_field_instances() {
           'image_style' => 'thumbnail',
         ),
         'type' => 'image',
-        'weight' => 0,
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'node',
@@ -2503,7 +2577,7 @@ function jj2015_session_field_default_field_instances() {
           'title_style' => '',
         ),
         'type' => 'title_linked',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'searchapi_result' => array(
         'label' => 'hidden',
@@ -2512,7 +2586,7 @@ function jj2015_session_field_default_field_instances() {
           'field_formatter_class' => '',
         ),
         'type' => 'text_plain',
-        'weight' => 1,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -2521,7 +2595,7 @@ function jj2015_session_field_default_field_instances() {
           'field_formatter_class' => 'text-muted',
         ),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'node',
@@ -2541,7 +2615,7 @@ function jj2015_session_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => -4,
+      'weight' => 55,
     ),
   );
 
@@ -2565,25 +2639,25 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 6,
       ),
       'search_index' => array(
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 10,
       ),
       'searchapi_result' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 2,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 7,
       ),
     ),
     'entity_type' => 'node',
@@ -2600,6 +2674,80 @@ function jj2015_session_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_buttons',
       'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-speaker-field_mr_or_mrs'
+  $field_instances['node-speaker-field_mr_or_mrs'] = array(
+    'bundle' => 'speaker',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Mr, Ms, Mrs, Dr., etc...',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
+        'type' => 'text_default',
+        'weight' => 13,
+      ),
+      'half_teaser_thumbnail' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
+        'type' => 'text_plain',
+        'weight' => 4,
+      ),
+      'search_index' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
+        'type' => 'text_plain',
+        'weight' => 8,
+      ),
+      'searchapi_result' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
+        'type' => 'text_plain',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
+        'type' => 'text_plain',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'span',
+    'field_name' => 'field_mr_or_mrs',
+    'label' => 'Title',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 52,
     ),
   );
 
@@ -2623,7 +2771,7 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'inline',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 9,
       ),
       'search_index' => array(
         'label' => 'hidden',
@@ -2632,19 +2780,19 @@ function jj2015_session_field_default_field_instances() {
           'field_formatter_class' => '',
         ),
         'type' => 'link_default',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'searchapi_result' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 5,
       ),
     ),
     'entity_type' => 'node',
@@ -2692,16 +2840,22 @@ function jj2015_session_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 11,
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
+        'type' => 'text_default',
+        'weight' => 15,
       ),
       'half_teaser_thumbnail' => array(
         'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'text',
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
+        'type' => 'text_plain',
+        'weight' => 6,
       ),
       'search_index' => array(
         'label' => 'hidden',
@@ -2710,41 +2864,49 @@ function jj2015_session_field_default_field_instances() {
           'field_formatter_class' => '',
         ),
         'type' => 'text_plain',
-        'weight' => 0,
+        'weight' => 10,
       ),
       'searchapi_result' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 4,
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
+        'type' => 'text_plain',
+        'weight' => 5,
       ),
       'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
+        'type' => 'text_plain',
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'node',
+    'fences_wrapper' => 'span',
     'field_name' => 'title_field',
-    'label' => 'Title',
-    'required' => TRUE,
+    'label' => 'Last Name',
+    'required' => 1,
     'settings' => array(
       'entity_translation_sync' => FALSE,
       'hide_label' => array(
-        'entity' => FALSE,
-        'page' => FALSE,
+        'entity' => 0,
+        'page' => 0,
       ),
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => -5,
+      'weight' => 54,
     ),
   );
 
@@ -2851,6 +3013,7 @@ function jj2015_session_field_default_field_instances() {
   t('Featured');
   t('File');
   t('File Type');
+  t('First Name');
   t('Image');
   t('Insérez ici tous les mots clés qui doivent être indexés par le moteur de recherche local. Le contenu standard de la session est déjà indexé, uniquement les titres des fichiers et tout ce qui se trouve dans cet onglet "Ressources" ne le sont pas de base.');
   t('Job Title');
@@ -2858,8 +3021,10 @@ function jj2015_session_field_default_field_instances() {
   t('Language');
   t('Languages');
   t('Langues dans lesquelles la session sera également disponible. <strong>Pas la langue principale! (qui s\'affichera en double sinon)</strong>');
+  t('Last Name');
   t('Les langues que parle le/la speaker (durant la conférence uniquement).');
   t('Main Language');
+  t('Mr, Ms, Mrs, Dr., etc...');
   t('Resources');
   t('Resources Links');
   t('Search index');

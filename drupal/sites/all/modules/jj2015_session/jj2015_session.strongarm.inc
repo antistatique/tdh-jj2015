@@ -175,6 +175,9 @@ function jj2015_session_strongarm() {
       'searchapi_result' => array(
         'custom_settings' => TRUE,
       ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

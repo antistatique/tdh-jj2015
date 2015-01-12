@@ -89,7 +89,7 @@ hide($content['links']);
 
   <?php print render($title_prefix); ?>
   <?php if (!$page): ?>
-    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print render($content['group_name']); ?></a></h2>
   <?php endif; ?>
   <?php print render($title_suffix); ?>
 
@@ -99,7 +99,7 @@ hide($content['links']);
         <?php print render($content['field_image']); ?>
       </div>
       <div class="col-sm-8">
-        <h1 class="media-heading"><?php print $title; ?></h1>
+        <h1 class="media-heading"><?php print render($content['group_name']); ?></h1>
         <p class="text-muted"><?php print render($content['field_job_title']); ?> <span class="text-success"><?php print render($content['field_languages']); ?></span></p>
 
         <div class="bio">

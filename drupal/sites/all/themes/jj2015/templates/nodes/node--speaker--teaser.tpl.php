@@ -92,7 +92,7 @@ if(!isset($readmore)) {
   <div class="media-body clearfix">
     <?php print render($title_prefix); ?>
     <?php if (!$page): ?>
-      <h4 class="media-heading"><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h4>
+      <h4 class="media-heading"><a href="<?php print $node_url; ?>"><?php print render($content['group_name']); ?></a></h4>
     <?php endif; ?>
     <?php print render($title_suffix); ?>
 
