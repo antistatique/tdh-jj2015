@@ -384,7 +384,13 @@ class FieldCollectionItemEntity extends Entity {
   public function save($skip_host_save = FALSE) {
     // Make sure we have a host entity during creation.
     if (!empty($this->is_new) && !(isset($this->hostEntityId) || isset($this->hostEntity) || isset($this->hostEntityRevisionId))) {
-      throw new Exception("Unable to create a field collection item without a given host entity.");
+      throw new Exception('Unable to create a field collection item without a given host entity.');
+    }
+
+    // Copy the values of translatable fields for a new field collection item.
+    if (field_collection_item_is_translatable() && !empty($this->is_new) && $this->langcode == LANGUAGE_NONE) {
+      $this->copyTranslations();
+
     }
 
     // Only save directly if we are told to skip saving the host entity. Else,
@@ -396,7 +402,7 @@ class FieldCollectionItemEntity extends Entity {
     else {
       $host_entity = $this->hostEntity();
       if (!$host_entity) {
-        throw new Exception("Unable to save a field collection item without a valid reference to a host entity.");
+        throw new Exception('Unable to save a field collection item without a valid reference to a host entity.');
       }
       // If this is creating a new revision, also do so for the host entity.
       if (!empty($this->revision) || !empty($this->is_new_revision)) {
@@ -424,6 +430,36 @@ class FieldCollectionItemEntity extends Entity {
   public function delete() {
     parent::delete();
     $this->deleteHostEntityReference();
+  }
+
+  /**
+   * Copies text to all languages the collection item has a translation for.
+   *
+   * @param $source_language
+   *   Language code to copy the text from.
+   */
+  public function copyTranslations($source_language = NULL) {
+    $host_et_handler = entity_translation_get_handler($this->hostEntityType(), $this->hostEntity());
+    $host_languages = array_keys($host_et_handler->getTranslations()->data);
+    if (empty($host_languages)) {
+      $host_languages = array(entity_language($this->hostEntityType(), $this->hostEntity()));
+    }
+    $source_language = isset($source_language) ? $source_language : $host_et_handler->getLanguage();
+    $target_languages = array_diff($host_languages, array($source_language));
+    $et_handler = entity_translation_get_handler($this->entityType(), $this);
+    $fields = array_keys(field_info_instances('field_collection_item', $this->field_name));
+
+    foreach ($fields as $translatable_field) {
+      foreach ($target_languages as $langcode) {
+        if (isset($this->{$translatable_field}[$source_language])) {
+          $this->{$translatable_field}[$langcode] =
+            $this->{$translatable_field}[$source_language];
+        }
+      }
+      if ($source_language == LANGUAGE_NONE && count($this->{$translatable_field}) > 1) {
+        $this->{$translatable_field}[$source_language] = NULL;
+      }
+    }
   }
 
   /**
