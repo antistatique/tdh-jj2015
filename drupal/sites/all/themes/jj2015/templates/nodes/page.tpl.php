@@ -96,7 +96,7 @@
       <div class="col-sm-12">
         <div class="isolate">
           <nav class="navbar navbar-default" role="navigation">
-            <div class="container-fluid">
+            <div>
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-tdh">
                   <span class="sr-only">Toggle navigation</span>

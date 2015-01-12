@@ -31,7 +31,3 @@ $field_speaker = $content['field_speaker']['#items'][0]['entity'];
 ?>
     <?php print render($content['field_speaker']); ?>
     <?php print render($content['field_description']); ?>
-        </div>
-      </div>
-
-    </div>
