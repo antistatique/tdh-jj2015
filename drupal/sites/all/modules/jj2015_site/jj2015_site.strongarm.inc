@@ -504,6 +504,10 @@ function jj2015_site_strongarm() {
         'label' => 'Search Result',
         'custom settings' => 1,
       ),
+      'teaser_label' => array(
+        'label' => 'Teaser Label',
+        'custom settings' => 1,
+      ),
     ),
   );
   $export['entity_view_modes'] = $strongarm;
@@ -629,6 +633,9 @@ function jj2015_site_strongarm() {
       ),
       'searchapi_result' => array(
         'custom_settings' => TRUE,
+      ),
+      'teaser_label' => array(
+        'custom_settings' => FALSE,
       ),
     ),
     'extra_fields' => array(

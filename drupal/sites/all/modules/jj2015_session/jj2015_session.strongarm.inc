@@ -40,6 +40,9 @@ function jj2015_session_strongarm() {
       'searchapi_result' => array(
         'custom_settings' => TRUE,
       ),
+      'teaser_label' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -104,6 +107,9 @@ function jj2015_session_strongarm() {
       ),
       'searchapi_result' => array(
         'custom_settings' => TRUE,
+      ),
+      'teaser_label' => array(
+        'custom_settings' => FALSE,
       ),
     ),
     'extra_fields' => array(
@@ -178,6 +184,9 @@ function jj2015_session_strongarm() {
       'diff_standard' => array(
         'custom_settings' => FALSE,
       ),
+      'teaser_label' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -210,6 +219,10 @@ function jj2015_session_strongarm() {
           ),
           'search_index' => array(
             'weight' => '7',
+            'visible' => FALSE,
+          ),
+          'teaser_label' => array(
+            'weight' => '0',
             'visible' => FALSE,
           ),
         ),

@@ -75,6 +75,7 @@ features[field_group][] = group_name|node|speaker|half_teaser_thumbnail
 features[field_group][] = group_name|node|speaker|search_index
 features[field_group][] = group_name|node|speaker|searchapi_result
 features[field_group][] = group_name|node|speaker|teaser
+features[field_group][] = group_name|node|speaker|teaser_label
 features[field_group][] = group_res_tabs|field_collection_item|field_resources|form
 features[field_group][] = group_tab_content|node|speaker|form
 features[field_group][] = group_tab_file|field_collection_item|field_resources|form
