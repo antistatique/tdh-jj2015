@@ -24,7 +24,7 @@
           </div>
         <?php endforeach ?>
         <div class="col-lg-6">
-          <a class="twitter-timeline" href="https://twitter.com/tdh_ch" data-widget-id="554659300317364224"></a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          <a class="twitter-timeline" href="https://twitter.com/hashtag/jj2015" data-widget-id="554910862100938752"></a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>
       </div>
     <?php endforeach ?>
