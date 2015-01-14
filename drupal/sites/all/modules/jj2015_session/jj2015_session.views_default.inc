@@ -293,6 +293,13 @@ function jj2015_session_views_default_views() {
     'speaker' => 'speaker',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Title (title_field:language) */
+  $handler->display->display_options['filters']['language']['id'] = 'language';
+  $handler->display->display_options['filters']['language']['table'] = 'field_data_title_field';
+  $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['value'] = array(
+    '***CURRENT_LANGUAGE***' => '***CURRENT_LANGUAGE***',
+  );
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');

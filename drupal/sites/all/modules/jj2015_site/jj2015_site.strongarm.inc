@@ -292,6 +292,7 @@ function jj2015_site_strongarm() {
   $strongarm->value = array(
     'node' => 'node',
     'taxonomy_term' => 'taxonomy_term',
+    'field_collection_item' => 0,
     'user' => 0,
   );
   $export['entity_translation_entity_types'] = $strongarm;
