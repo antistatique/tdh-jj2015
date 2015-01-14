@@ -289,19 +289,18 @@ function jj2015_session_field_group_info() {
       1 => 'field_first_name',
       2 => 'field_mr_or_mrs',
     ),
-    'format_type' => 'div',
+    'format_type' => 'html-element',
     'format_settings' => array(
       'label' => 'Name',
       'instance_settings' => array(
-        'id' => '',
-        'classes' => 'group-name field-group-div',
-        'description' => '',
+        'classes' => '',
+        'element' => 'span',
         'show_label' => '0',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'none',
+        'label_element' => 'div',
+        'attributes' => '',
+        'required_fields' => 1,
       ),
-      'formatter' => 'open',
+      'formatter' => '',
     ),
   );
   $export['group_name|node|speaker|teaser_label'] = $field_group;
