@@ -168,6 +168,7 @@ features[user_permission][] = override speaker published option
 features[user_permission][] = override speaker revision option
 features[user_permission][] = override speaker sticky option
 features[user_permission][] = view any unpublished speaker content
+features[variable][] = date_format_year_only
 features[variable][] = field_bundle_settings_node__event_day
 features[variable][] = field_bundle_settings_node__session
 features[variable][] = field_bundle_settings_node__speaker

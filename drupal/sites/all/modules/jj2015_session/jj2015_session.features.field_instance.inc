@@ -545,7 +545,7 @@ function jj2015_session_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
         ),
-        'type' => 'link_default',
+        'type' => 'link_url',
         'weight' => 1,
       ),
       'full' => array(
@@ -554,7 +554,7 @@ function jj2015_session_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
         ),
-        'type' => 'link_title_plain',
+        'type' => 'link_url',
         'weight' => 1,
       ),
     ),
@@ -570,7 +570,7 @@ function jj2015_session_field_default_field_instances() {
         'configurable_class' => 0,
         'configurable_title' => 0,
         'rel' => '',
-        'target' => 'default',
+        'target' => '_blank',
         'title' => '',
       ),
       'display' => array(
@@ -620,9 +620,14 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
-          'field_formatter_class' => '',
+          'field_formatter_class' => 'bullet',
+          'format_type' => 'year_only',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
         ),
-        'type' => 'date_plain',
+        'type' => 'date_default',
         'weight' => 5,
       ),
     ),
