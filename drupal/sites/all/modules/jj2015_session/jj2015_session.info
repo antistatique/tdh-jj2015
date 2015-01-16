@@ -70,6 +70,7 @@ features[field_base][] = name_field
 features[field_group][] = group_content_tab|node|session|form
 features[field_group][] = group_languages|node|session|default
 features[field_group][] = group_meta|node|session|default
+features[field_group][] = group_muted|node|session|default
 features[field_group][] = group_name|node|speaker|default
 features[field_group][] = group_name|node|speaker|half_teaser_thumbnail
 features[field_group][] = group_name|node|speaker|search_index

@@ -52,7 +52,7 @@ function jj2015_session_field_group_info() {
   $field_group->parent_name = 'group_meta';
   $field_group->data = array(
     'label' => 'languages',
-    'weight' => '13',
+    'weight' => '14',
     'children' => array(
       0 => 'field_languages',
       1 => 'field_main_language',
@@ -85,8 +85,8 @@ function jj2015_session_field_group_info() {
     'weight' => '1',
     'children' => array(
       0 => 'field_session_date',
-      1 => 'field_session_type',
-      2 => 'group_languages',
+      1 => 'group_languages',
+      2 => 'group_muted',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -101,6 +101,35 @@ function jj2015_session_field_group_info() {
     ),
   );
   $export['group_meta|node|session|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_muted|node|session|default';
+  $field_group->group_name = 'group_muted';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'session';
+  $field_group->mode = 'default';
+  $field_group->parent_name = 'group_meta';
+  $field_group->data = array(
+    'label' => 'muted',
+    'weight' => '12',
+    'children' => array(
+      0 => 'field_session_type',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'label' => 'muted',
+      'instance_settings' => array(
+        'classes' => 'text-muted bullet',
+        'element' => 'span',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
+      ),
+    ),
+  );
+  $export['group_muted|node|session|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */

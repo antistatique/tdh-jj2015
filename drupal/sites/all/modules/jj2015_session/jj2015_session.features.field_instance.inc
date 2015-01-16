@@ -1233,7 +1233,7 @@ function jj2015_session_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
         ),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'taxonomy_term_reference_plain',
         'weight' => 17,
       ),
       'full' => array(
@@ -1832,10 +1832,10 @@ function jj2015_session_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'taxonomy',
         'settings' => array(
-          'field_formatter_class' => '',
+          'field_formatter_class' => 'text-muted bullet',
         ),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 12,
+        'type' => 'taxonomy_term_reference_plain',
+        'weight' => 13,
       ),
       'full' => array(
         'label' => 'hidden',
