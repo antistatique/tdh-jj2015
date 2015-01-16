@@ -37,6 +37,9 @@ function jj2015_session_context_default_contexts() {
         ),
       ),
     ),
+    'menu' => array(
+      0 => 'main-menu:program',
+    ),
   );
   $context->condition_mode = 0;
   $export['event-day'] = $context;
@@ -67,6 +70,9 @@ function jj2015_session_context_default_contexts() {
           'weight' => '-10',
         ),
       ),
+    ),
+    'menu' => array(
+      0 => 'main-menu:program',
     ),
   );
   $context->condition_mode = 0;
@@ -103,6 +109,30 @@ function jj2015_session_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'single_session';
+  $context->description = '';
+  $context->tag = '';
+  $context->conditions = array(
+    'node' => array(
+      'values' => array(
+        'session' => 'session',
+      ),
+      'options' => array(
+        'node_form' => '0',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'menu' => array(
+      0 => 'main-menu:program',
+    ),
+  );
+  $context->condition_mode = 0;
+  $export['single_session'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'speaker';
   $context->description = '';
   $context->tag = '';
@@ -126,6 +156,9 @@ function jj2015_session_context_default_contexts() {
           'weight' => '-10',
         ),
       ),
+    ),
+    'menu' => array(
+      0 => 'main-menu:speakers',
     ),
   );
   $context->condition_mode = 0;
