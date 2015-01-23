@@ -1151,11 +1151,9 @@ function field_collection_field_get_entity(&$item, $field_name = NULL) {
   elseif (isset($item['value'])) {
     // By default always load the default revision, so caches get used.
     $entity = field_collection_item_load($item['value']);
-    if (!empty($entity->revision_id) && !empty($item['revision_id'])) {
-      if ($entity->revision_id != $item['revision_id']) {
-        // A non-default revision is a referenced, so load this one.
-        $entity = field_collection_item_revision_load($item['revision_id']);
-      }
+    if ($entity->revision_id != $item['revision_id']) {
+      // A non-default revision is a referenced, so load this one.
+      $entity = field_collection_item_revision_load($item['revision_id']);
     }
     return $entity;
   }
