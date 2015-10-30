@@ -1,0 +1,10 @@
+***************
+*** 22,24 ****
+  files[] = tests/entityreference.taxonomy.test
+  files[] = tests/entityreference.admin.test
+  files[] = tests/entityreference.feeds.test
+--- 22,25 ----
+  files[] = tests/entityreference.taxonomy.test
+  files[] = tests/entityreference.admin.test
+  files[] = tests/entityreference.feeds.test
++ files[] = tests/entityreference.entity_translation.test
