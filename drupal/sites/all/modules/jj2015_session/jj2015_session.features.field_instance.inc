@@ -10,7 +10,8 @@
 function jj2015_session_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'field_collection_item-field_resources-field_author'
+  // Exported field_instance:
+  // 'field_collection_item-field_resources-field_author'.
   $field_instances['field_collection_item-field_resources-field_author'] = array(
     'bundle' => 'field_resources',
     'default_value' => NULL,
@@ -57,7 +58,8 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_resources-field_copyright'
+  // Exported field_instance:
+  // 'field_collection_item-field_resources-field_copyright'.
   $field_instances['field_collection_item-field_resources-field_copyright'] = array(
     'bundle' => 'field_resources',
     'default_value' => NULL,
@@ -104,7 +106,8 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_resources-field_file'
+  // Exported field_instance:
+  // 'field_collection_item-field_resources-field_file'.
   $field_instances['field_collection_item-field_resources-field_file'] = array(
     'bundle' => 'field_resources',
     'deleted' => 0,
@@ -153,7 +156,8 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_resources-field_file_type'
+  // Exported field_instance:
+  // 'field_collection_item-field_resources-field_file_type'.
   $field_instances['field_collection_item-field_resources-field_file_type'] = array(
     'bundle' => 'field_resources',
     'default_value' => NULL,
@@ -197,7 +201,8 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_resources-field_language'
+  // Exported field_instance:
+  // 'field_collection_item-field_resources-field_language'.
   $field_instances['field_collection_item-field_resources-field_language'] = array(
     'bundle' => 'field_resources',
     'default_value' => NULL,
@@ -241,7 +246,8 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_resources-field_resource_title'
+  // Exported field_instance:
+  // 'field_collection_item-field_resources-field_resource_title'.
   $field_instances['field_collection_item-field_resources-field_resource_title'] = array(
     'bundle' => 'field_resources',
     'default_value' => NULL,
@@ -288,7 +294,8 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_resources-field_year'
+  // Exported field_instance:
+  // 'field_collection_item-field_resources-field_year'.
   $field_instances['field_collection_item-field_resources-field_year'] = array(
     'bundle' => 'field_resources',
     'deleted' => 0,
@@ -304,6 +311,7 @@ function jj2015_session_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 6,
@@ -318,6 +326,7 @@ function jj2015_session_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 6,
@@ -353,7 +362,8 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_resources_links-field_author'
+  // Exported field_instance:
+  // 'field_collection_item-field_resources_links-field_author'.
   $field_instances['field_collection_item-field_resources_links-field_author'] = array(
     'bundle' => 'field_resources_links',
     'default_value' => NULL,
@@ -400,7 +410,8 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_resources_links-field_copyright'
+  // Exported field_instance:
+  // 'field_collection_item-field_resources_links-field_copyright'.
   $field_instances['field_collection_item-field_resources_links-field_copyright'] = array(
     'bundle' => 'field_resources_links',
     'default_value' => NULL,
@@ -444,7 +455,8 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_resources_links-field_language'
+  // Exported field_instance:
+  // 'field_collection_item-field_resources_links-field_language'.
   $field_instances['field_collection_item-field_resources_links-field_language'] = array(
     'bundle' => 'field_resources_links',
     'default_value' => NULL,
@@ -485,7 +497,8 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_resources_links-field_resource_title'
+  // Exported field_instance:
+  // 'field_collection_item-field_resources_links-field_resource_title'.
   $field_instances['field_collection_item-field_resources_links-field_resource_title'] = array(
     'bundle' => 'field_resources_links',
     'default_value' => NULL,
@@ -532,7 +545,8 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_resources_links-field_url'
+  // Exported field_instance:
+  // 'field_collection_item-field_resources_links-field_url'.
   $field_instances['field_collection_item-field_resources_links-field_url'] = array(
     'bundle' => 'field_resources_links',
     'default_value' => NULL,
@@ -596,7 +610,8 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_resources_links-field_year'
+  // Exported field_instance:
+  // 'field_collection_item-field_resources_links-field_year'.
   $field_instances['field_collection_item-field_resources_links-field_year'] = array(
     'bundle' => 'field_resources_links',
     'deleted' => 0,
@@ -612,6 +627,7 @@ function jj2015_session_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 5,
@@ -626,6 +642,7 @@ function jj2015_session_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 5,
@@ -661,7 +678,8 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_speakers-field_description'
+  // Exported field_instance:
+  // 'field_collection_item-field_speakers-field_description'.
   $field_instances['field_collection_item-field_speakers-field_description'] = array(
     'bundle' => 'field_speakers',
     'default_value' => NULL,
@@ -717,7 +735,8 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_speakers-field_speaker'
+  // Exported field_instance:
+  // 'field_collection_item-field_speakers-field_speaker'.
   $field_instances['field_collection_item-field_speakers-field_speaker'] = array(
     'bundle' => 'field_speakers',
     'default_value' => NULL,
@@ -791,7 +810,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event_day-body'
+  // Exported field_instance: 'node-event_day-body'.
   $field_instances['node-event_day-body'] = array(
     'bundle' => 'event_day',
     'default_value' => NULL,
@@ -861,7 +880,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event_day-field_session_day'
+  // Exported field_instance: 'node-event_day-field_session_day'.
   $field_instances['node-event_day-field_session_day'] = array(
     'bundle' => 'event_day',
     'default_value' => NULL,
@@ -917,7 +936,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event_day-title_field'
+  // Exported field_instance: 'node-event_day-title_field'.
   $field_instances['node-event_day-title_field'] = array(
     'bundle' => 'event_day',
     'default_value' => NULL,
@@ -978,7 +997,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-body'
+  // Exported field_instance: 'node-session-body'.
   $field_instances['node-session-body'] = array(
     'bundle' => 'session',
     'default_value' => NULL,
@@ -1062,7 +1081,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_featured'
+  // Exported field_instance: 'node-session-field_featured'.
   $field_instances['node-session-field_featured'] = array(
     'bundle' => 'session',
     'default_value' => array(
@@ -1129,7 +1148,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_image'
+  // Exported field_instance: 'node-session-field_image'.
   $field_instances['node-session-field_image'] = array(
     'bundle' => 'session',
     'deleted' => 0,
@@ -1225,7 +1244,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_languages'
+  // Exported field_instance: 'node-session-field_languages'.
   $field_instances['node-session-field_languages'] = array(
     'bundle' => 'session',
     'default_value' => NULL,
@@ -1296,7 +1315,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_main_language'
+  // Exported field_instance: 'node-session-field_main_language'.
   $field_instances['node-session-field_main_language'] = array(
     'bundle' => 'session',
     'default_value' => NULL,
@@ -1358,7 +1377,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_metatags'
+  // Exported field_instance: 'node-session-field_metatags'.
   $field_instances['node-session-field_metatags'] = array(
     'bundle' => 'session',
     'default_value' => NULL,
@@ -1420,7 +1439,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_name_title'
+  // Exported field_instance: 'node-session-field_name_title'.
   $field_instances['node-session-field_name_title'] = array(
     'bundle' => 'session',
     'default_value' => NULL,
@@ -1478,7 +1497,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_resources'
+  // Exported field_instance: 'node-session-field_resources'.
   $field_instances['node-session-field_resources'] = array(
     'bundle' => 'session',
     'default_value' => NULL,
@@ -1576,7 +1595,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_resources_links'
+  // Exported field_instance: 'node-session-field_resources_links'.
   $field_instances['node-session-field_resources_links'] = array(
     'bundle' => 'session',
     'default_value' => NULL,
@@ -1660,7 +1679,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_session_date'
+  // Exported field_instance: 'node-session-field_session_date'.
   $field_instances['node-session-field_session_date'] = array(
     'bundle' => 'session',
     'deleted' => 0,
@@ -1676,6 +1695,7 @@ function jj2015_session_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 11,
@@ -1690,6 +1710,7 @@ function jj2015_session_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 3,
@@ -1716,6 +1737,7 @@ function jj2015_session_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 0,
@@ -1730,6 +1752,7 @@ function jj2015_session_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 1,
@@ -1765,7 +1788,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_session_day'
+  // Exported field_instance: 'node-session-field_session_day'.
   $field_instances['node-session-field_session_day'] = array(
     'bundle' => 'session',
     'default_value' => NULL,
@@ -1826,7 +1849,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_session_type'
+  // Exported field_instance: 'node-session-field_session_type'.
   $field_instances['node-session-field_session_type'] = array(
     'bundle' => 'session',
     'default_value' => NULL,
@@ -1903,7 +1926,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_speakers'
+  // Exported field_instance: 'node-session-field_speakers'.
   $field_instances['node-session-field_speakers'] = array(
     'bundle' => 'session',
     'default_value' => NULL,
@@ -1986,7 +2009,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_youtube'
+  // Exported field_instance: 'node-session-field_youtube'.
   $field_instances['node-session-field_youtube'] = array(
     'bundle' => 'session',
     'default_value' => NULL,
@@ -2003,6 +2026,7 @@ function jj2015_session_field_default_field_instances() {
           'youtube_controls' => 0,
           'youtube_height' => '',
           'youtube_iv_load_policy' => 1,
+          'youtube_loop' => FALSE,
           'youtube_showinfo' => 0,
           'youtube_size' => 'responsive',
           'youtube_width' => '',
@@ -2020,6 +2044,7 @@ function jj2015_session_field_default_field_instances() {
           'youtube_controls' => 0,
           'youtube_height' => '',
           'youtube_iv_load_policy' => 1,
+          'youtube_loop' => FALSE,
           'youtube_showinfo' => 0,
           'youtube_size' => 'responsive',
           'youtube_width' => '',
@@ -2070,7 +2095,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-title_field'
+  // Exported field_instance: 'node-session-title_field'.
   $field_instances['node-session-title_field'] = array(
     'bundle' => 'session',
     'default_value' => NULL,
@@ -2134,7 +2159,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-speaker-body'
+  // Exported field_instance: 'node-speaker-body'.
   $field_instances['node-speaker-body'] = array(
     'bundle' => 'speaker',
     'default_value' => NULL,
@@ -2205,7 +2230,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-speaker-field_email'
+  // Exported field_instance: 'node-speaker-field_email'.
   $field_instances['node-speaker-field_email'] = array(
     'bundle' => 'speaker',
     'default_value' => NULL,
@@ -2274,7 +2299,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-speaker-field_featured'
+  // Exported field_instance: 'node-speaker-field_featured'.
   $field_instances['node-speaker-field_featured'] = array(
     'bundle' => 'speaker',
     'default_value' => array(
@@ -2341,7 +2366,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-speaker-field_file'
+  // Exported field_instance: 'node-speaker-field_file'.
   $field_instances['node-speaker-field_file'] = array(
     'bundle' => 'speaker',
     'deleted' => 0,
@@ -2413,7 +2438,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-speaker-field_first_name'
+  // Exported field_instance: 'node-speaker-field_first_name'.
   $field_instances['node-speaker-field_first_name'] = array(
     'bundle' => 'speaker',
     'default_value' => NULL,
@@ -2496,7 +2521,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-speaker-field_image'
+  // Exported field_instance: 'node-speaker-field_image'.
   $field_instances['node-speaker-field_image'] = array(
     'bundle' => 'speaker',
     'deleted' => 0,
@@ -2587,7 +2612,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-speaker-field_job_title'
+  // Exported field_instance: 'node-speaker-field_job_title'.
   $field_instances['node-speaker-field_job_title'] = array(
     'bundle' => 'speaker',
     'default_value' => NULL,
@@ -2670,7 +2695,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-speaker-field_languages'
+  // Exported field_instance: 'node-speaker-field_languages'.
   $field_instances['node-speaker-field_languages'] = array(
     'bundle' => 'speaker',
     'default_value' => NULL,
@@ -2734,7 +2759,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-speaker-field_mr_or_mrs'
+  // Exported field_instance: 'node-speaker-field_mr_or_mrs'.
   $field_instances['node-speaker-field_mr_or_mrs'] = array(
     'bundle' => 'speaker',
     'default_value' => NULL,
@@ -2817,7 +2842,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-speaker-field_url'
+  // Exported field_instance: 'node-speaker-field_url'.
   $field_instances['node-speaker-field_url'] = array(
     'bundle' => 'speaker',
     'default_value' => NULL,
@@ -2904,7 +2929,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-speaker-title_field'
+  // Exported field_instance: 'node-speaker-title_field'.
   $field_instances['node-speaker-title_field'] = array(
     'bundle' => 'speaker',
     'default_value' => NULL,
@@ -2991,7 +3016,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-event_day-field_body'
+  // Exported field_instance: 'taxonomy_term-event_day-field_body'.
   $field_instances['taxonomy_term-event_day-field_body'] = array(
     'bundle' => 'event_day',
     'default_value' => NULL,
@@ -3030,7 +3055,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-event_day-field_event_day'
+  // Exported field_instance: 'taxonomy_term-event_day-field_event_day'.
   $field_instances['taxonomy_term-event_day-field_event_day'] = array(
     'bundle' => 'event_day',
     'deleted' => 0,
@@ -3046,6 +3071,7 @@ function jj2015_session_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 1,
@@ -3080,7 +3106,7 @@ function jj2015_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-session_types-name_field'
+  // Exported field_instance: 'taxonomy_term-session_types-name_field'.
   $field_instances['taxonomy_term-session_types-name_field'] = array(
     'bundle' => 'session_types',
     'default_value' => NULL,
