@@ -10,7 +10,7 @@
 function jj2015_site_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-page-body'
+  // Exported field_instance: 'node-page-body'.
   $field_instances['node-page-body'] = array(
     'bundle' => 'page',
     'default_value' => NULL,
@@ -77,7 +77,7 @@ function jj2015_site_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-page-field_event_day'
+  // Exported field_instance: 'node-page-field_event_day'.
   $field_instances['node-page-field_event_day'] = array(
     'bundle' => 'page',
     'deleted' => 0,
@@ -137,7 +137,7 @@ function jj2015_site_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-page-field_featured'
+  // Exported field_instance: 'node-page-field_featured'.
   $field_instances['node-page-field_featured'] = array(
     'bundle' => 'page',
     'default_value' => array(
@@ -192,7 +192,7 @@ function jj2015_site_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-page-field_image'
+  // Exported field_instance: 'node-page-field_image'.
   $field_instances['node-page-field_image'] = array(
     'bundle' => 'page',
     'deleted' => 0,
@@ -266,7 +266,7 @@ function jj2015_site_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-page-field_is_event'
+  // Exported field_instance: 'node-page-field_is_event'.
   $field_instances['node-page-field_is_event'] = array(
     'bundle' => 'page',
     'default_value' => array(
@@ -321,7 +321,7 @@ function jj2015_site_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-page-title_field'
+  // Exported field_instance: 'node-page-title_field'.
   $field_instances['node-page-title_field'] = array(
     'bundle' => 'page',
     'default_value' => NULL,

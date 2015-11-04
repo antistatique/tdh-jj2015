@@ -213,7 +213,8 @@ class FieldCollectionItemEntity extends Entity {
   /**
    * Updates the wrapped host entity object.
    *
-   * @param $entity
+   * @param object $entity
+   *   Host entity.
    */
   public function updateHostEntity($entity) {
     $this->fetchHostDetails();
@@ -231,7 +232,7 @@ class FieldCollectionItemEntity extends Entity {
       $this->hostEntity = $entity;
       $delta = $this->delta();
       if (isset($entity->{$this->field_name}[$this->langcode][$delta]['entity'])) {
-        $entity->{$this->field_name}[$this->langcode][$delta]['entity'] = $entity;
+        $entity->{$this->field_name}[$this->langcode][$delta]['entity'] = $this;
       }
     }
     else {
@@ -433,7 +434,11 @@ class FieldCollectionItemEntity extends Entity {
     $delta = $this->delta();
     if ($this->item_id && isset($delta)) {
       unset($this->hostEntity->{$this->field_name}[$this->langcode][$delta]);
-      entity_save($this->hostEntityType, $this->hostEntity);
+      // Do not save when the host entity is being deleted. See
+      // field_collection_field_delete().
+      if (empty($this->hostEntity->field_collection_deleting)) {
+        entity_save($this->hostEntityType, $this->hostEntity);
+      }
     }
   }
 
